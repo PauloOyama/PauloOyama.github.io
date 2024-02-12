@@ -89,23 +89,40 @@
             </footer>
         </section>
         <script>
+
+            const apiUrl = '127.0.0.1:8000/items/5?q=';
             const currentUrl = window.location.href; 
             var arr = []
             for (var i = 0; i < currentUrl.length;i++){
                 if(currentUrl[i] == '='){
-                    arr.push(i);
+                    arr.push(i+1);
                     break;
                 }
             }
 
             for (var i = 0; i < currentUrl.length;i++){
                 if(currentUrl[i] == '&'){
-                    arr.push(i-1);
+                    arr.push(i);
                     break;
                 }
             }
+            
+            token = currentUrl.slice(arr[0],arr[1])
+            console.log(token)
 
-            console.log(arr)
+            fetch(apiUrl + token)
+                .then(response => {
+                  if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                  }
+                  return response.json();
+                })
+                .then(data => {
+                  console.log(data);
+                })
+                .catch(error => {
+                  console.error('Error:', error);
+                });
         </script>
     </body>
 </html>
