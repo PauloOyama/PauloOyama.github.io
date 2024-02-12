@@ -91,14 +91,14 @@
         <script>
             const currentUrl = window.location.href; 
             var arr = []
-            for (var i = 0; i < length(currentUrl);i++){
+            for (var i = 0; i < currentUrl.length;i++){
                 if(currentUrl[i] == '='){
                     arr.push(i);
                     break;
                 }
             }
 
-            for (var i = 0; i < length(currentUrl);i++){
+            for (var i = 0; i < currentUrl.length;i++){
                 if(currentUrl[i] == '&'){
                     arr.push(i-1);
                     break;
