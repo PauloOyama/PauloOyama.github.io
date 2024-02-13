@@ -81,16 +81,35 @@ def read_item(item_id: int, q: Union[str, None] = None):
     headers = {"Authorization": "Bearer " + q}
     response = requests.get(url_me, headers=headers)
     print(response.json())
-    id_me = response.json()
+    id_me = response.json()["id"]
     print(id_me)
     print("Pegou O ID")
 
-    playlist = {"name": "Recommendation"}
+    playlist = {"name": "TESTEEEEE"}
     playlist["description"] = "Não sei"
     playlist["public"] = False
 
     url = "https://api.spotify.com/v1/users/{user_id}/playlists".format(user_id=id_me)
-    response = requests.post(url=url, data=playlist, headers=headers)
+    response = requests.post(url=url, json=playlist, headers=headers)
     print("CRIOU A PlAYLIST")
+    print(response.status_code)
+    playlist_id = response.json()["id"]
+    print(playlist_id)
 
+    track_uris = []
+    with open("./rec.csv") as csvfile:
+
+        spamreader = csv.DictReader(csvfile)
+        for row in spamreader:
+            track_uris.append(row["uri"])
+
+    print(track_uris)
+
+    url_pl = "https://api.spotify.com/v1/playlists/{playlist_id}/tracks".format(
+        playlist_id=playlist_id
+    )
+    uris = dict()
+    uris["uris"] = track_uris
+    response = requests.post(url=url_pl, json=uris, headers=headers)
+    print("Add Tracks ", response.status_code)
     return {"item_id": item_id, "q": q}
