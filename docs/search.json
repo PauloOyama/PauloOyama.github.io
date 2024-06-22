@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Paulo Oyama",
+    "section": "",
+    "text": "Universidade Federal de Uberlândia (UFU), Uberlândia\n\nBachelor of Computer Science, Completed March 2024\nParticipated in the Tutorial Education Program for 2 years;\nCompleted scientific initiation project on noise reduction using neural networks with certification\nGraduation thesis on Metadata-based Recommendation Systems\n\nColégio Santo André, São José do Rio Preto\n\nCompleted High School in 2015"
+  },
+  {
+    "objectID": "index.html#algar-telecom-uberlândia---data-scientist",
+    "href": "index.html#algar-telecom-uberlândia---data-scientist",
+    "title": "Paulo Oyama",
+    "section": "Algar Telecom, Uberlândia - Data Scientist",
+    "text": "Algar Telecom, Uberlândia - Data Scientist\n\nSeptember 2022 - Present\nBuilt, managed, and maintained workflows in Glue\nCreated, managed, and maintained stacks in CloudFormation\nDeveloped Python scripts for data automation using pyspark\nCreated dashboards for data visualization\nCI/CD with Jenkins\nDeveloped Sentiment Analysis models for NPS classification"
+  },
+  {
+    "objectID": "index.html#bkpi-uberlândia---mobile-developer",
+    "href": "index.html#bkpi-uberlândia---mobile-developer",
+    "title": "Paulo Oyama",
+    "section": "BKPi, Uberlândia - Mobile Developer",
+    "text": "BKPi, Uberlândia - Mobile Developer\n\nDecember 2021 - June 2022\nState management\nIntegrated with Firebase database\nUnit testing assistance\nCI/CD"
+  },
+  {
+    "objectID": "index.html#uansolutions-uberlândia---mobile-development-intern",
+    "href": "index.html#uansolutions-uberlândia---mobile-development-intern",
+    "title": "Paulo Oyama",
+    "section": "UanSolutions, Uberlândia - Mobile Development Intern",
+    "text": "UanSolutions, Uberlândia - Mobile Development Intern\n\nFebruary 2020 - August 2020\nIntroduction to design patterns\nApplication testing\nUsed design tools\nStarted learning Dart language with Flutter framework"
+  }
+]
