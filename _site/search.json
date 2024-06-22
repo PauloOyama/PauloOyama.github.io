@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Paulo Oyama",
+    "section": "",
+    "text": "Universidade Federal de Uberlândia (UFU), Uberlândia\n\nBachelor of Computer Science, Completed March 2024\nParticipated in the Tutorial Education Program for 2 years;\nCompleted scientific initiation project on noise reduction using neural networks with certification\nGraduation thesis on Metadata-based Recommendation Systems\n\nColégio Santo André, São José do Rio Preto\n\nCompleted High School in 2015"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Portfolio",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2\n\n\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n{r} 1 + 1\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n{r} 1 + 1\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n{r} 1 + 1\n\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n{r} 1 + 1\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n{r} 1 + 1\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n{r} 1 + 1\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n{r} 1 + 1\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n{r} 1 + 1\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Finley Malloc",
+    "section": "Education",
+    "text": "Education\nUniversity of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011"
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "Finley Malloc",
+    "section": "Experience",
+    "text": "Experience\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Spet 2012 - April 2018"
+  },
+  {
+    "objectID": "index.html#algar-telecom-uberlândia---data-scientist",
+    "href": "index.html#algar-telecom-uberlândia---data-scientist",
+    "title": "Paulo Oyama",
+    "section": "Algar Telecom, Uberlândia - Data Scientist",
+    "text": "Algar Telecom, Uberlândia - Data Scientist\n\nSeptember 2022 - Present\nBuilt, managed, and maintained workflows in Glue\nCreated, managed, and maintained stacks in CloudFormation\nDeveloped Python scripts for data automation using pyspark\nCreated dashboards for data visualization\nCI/CD with Jenkins\nDeveloped Sentiment Analysis models for NPS classification"
+  },
+  {
+    "objectID": "index.html#bkpi-uberlândia---mobile-developer",
+    "href": "index.html#bkpi-uberlândia---mobile-developer",
+    "title": "Paulo Oyama",
+    "section": "BKPi, Uberlândia - Mobile Developer",
+    "text": "BKPi, Uberlândia - Mobile Developer\n\nDecember 2021 - June 2022\nState management\nIntegrated with Firebase database\nUnit testing assistance\nCI/CD"
+  },
+  {
+    "objectID": "index.html#uansolutions-uberlândia---mobile-development-intern",
+    "href": "index.html#uansolutions-uberlândia---mobile-development-intern",
+    "title": "Paulo Oyama",
+    "section": "UanSolutions, Uberlândia - Mobile Development Intern",
+    "text": "UanSolutions, Uberlândia - Mobile Development Intern\n\nFebruary 2020 - August 2020\nIntroduction to design patterns\nApplication testing\nUsed design tools\nStarted learning Dart language with Flutter framework"
+  }
+]

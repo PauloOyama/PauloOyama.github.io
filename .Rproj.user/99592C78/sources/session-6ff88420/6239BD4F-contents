@@ -1,0 +1,55 @@
+---
+title: "Paulo Oyama"
+listing: false
+about:
+  template: trestles
+  image: photo.jpeg
+  image-shape: round
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://github.com
+    - icon: github
+      text: Github
+      href: https://github.com
+repo-url: https://github.com/quarto-dev/quarto-demo
+repo-actions: [edit, issue]
+---
+
+# Education
+
+- **Universidade Federal de Uberlândia (UFU), Uberlândia**
+  - Bachelor of Computer Science, Completed March 2024
+  - Participated in the Tutorial Education Program for 2 years;
+  - Completed scientific initiation project on noise reduction using neural networks with certification
+  - Graduation thesis on Metadata-based Recommendation Systems
+
+
+- **Colégio Santo André, São José do Rio Preto**
+  - Completed High School in 2015
+
+# Experience
+
+## Algar Telecom, Uberlândia - Data Scientist
+- September 2022 - Present
+- Built, managed, and maintained workflows in Glue
+- Created, managed, and maintained stacks in CloudFormation
+- Developed Python scripts for data automation using pyspark
+- Created dashboards for data visualization
+- CI/CD with Jenkins
+- Developed Sentiment Analysis models for NPS classification
+
+## BKPi, Uberlândia - Mobile Developer
+- December 2021 - June 2022
+- State management
+- Integrated with Firebase database
+- Unit testing assistance
+- CI/CD
+
+## UanSolutions, Uberlândia - Mobile Development Intern
+- February 2020 - August 2020
+- Introduction to design patterns
+- Application testing
+- Used design tools
+- Started learning Dart language with Flutter framework
+
