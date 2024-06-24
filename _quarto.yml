@@ -4,22 +4,32 @@ project:
 
 website:
   title: "Paulo Oyama"
-  
+  page-navigation: true
+  bread-crumbs: false
+  back-to-top-navigation: true
   page-footer:
     center: 
       - icon: github
-        href: https://github.com/
+        href: https://github.com/PauloOyama
+  sidebar:
+    style: "floating"
+    search: true
+    contents:
+      - section: "Layout"
+        contents:
+          - projects.qmd
+  
 
   navbar:
     tools:
-      - icon: envelope
-        href: https://twitter.com
+      #- icon: envelope
+      #  href: papaloyama@gmail.com
       - icon: github
         menu:
           - text: Source Code
-            url:  https://code.com
+            url:  https://github.com/PauloOyama/PauloOyama.github.io
           - text: Report a Bug
-            url:  https://bugs.com
+            url:  https://github.com/PauloOyama/PauloOyama.github.io/issues
     background: 'dark'
     search: true
     right:
@@ -29,8 +39,9 @@ website:
 
 format:
   html:
+    page-layout: full
     theme: 
-      #dark: darkly
+      dark: darkly
       light: lux
     toc: true
 

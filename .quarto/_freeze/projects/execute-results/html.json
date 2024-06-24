@@ -1,7 +1,8 @@
 {
-  "hash": "cc560a4e395cfa265fcb88d078eeaf28",
+  "hash": "39d49306cfcfaddc2ebadfda10924ecd",
   "result": {
-    "markdown": "---\ntitle: \"Portfolio\"\nlisting:\n  contents: posts\n  sort: \"date desc\"\n  type: default\n---\n\n\nThis is a Quarto website.\n\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n\n\nThis is a Quarto website.\n\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n{r} 1 + 1\n\nThis is a Quarto website.\n\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n{r} 1 + 1\n\nThis is a Quarto website.\n\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n{r} 1 + 1\n\n# This is a Quarto website.\n\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n{r} 1 + 1\n\nThis is a Quarto website.\n\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n{r} 1 + 1\n\nThis is a Quarto website.\n\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n{r} 1 + 1\n\nThis is a Quarto website.\n\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n{r} 1 + 1\n\nThis is a Quarto website.\n\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n{r} 1 + 1\n",
+    "engine": "knitr",
+    "markdown": "---\nsidebar: false\ntitle: \"Portfolio\"\nlisting:\n  contents: portfolio\n  type: grid\n  sort: \"date\"\n---\n\n\nThis is a Quarto website.\n\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 2\n```\n\n\n:::\n:::\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"

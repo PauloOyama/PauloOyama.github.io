@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Paulo Oyama</title>
+<title>Paulo Oyama - Monte Carlo Parte 2</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +23,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -78,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Paulo Oyama</span>
     </a>
   </div>
@@ -89,11 +88,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
+    <a class="nav-link" href="../projects.html"> 
 <span class="menu-text">Portfolio</span></a>
   </li>  
 </ul>
@@ -114,110 +113,45 @@ ul.task-list li input[type="checkbox"] {
           </li>
       </ul>
     </div>
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-  <ul>
-  <li><a href="#education" id="toc-education" class="nav-link active" data-scroll-target="#education">Education</a></li>
-  <li><a href="#experience" id="toc-experience" class="nav-link" data-scroll-target="#experience">Experience</a>
-  <ul class="collapse">
-  <li><a href="#algar-telecom-uberlândia---data-scientist" id="toc-algar-telecom-uberlândia---data-scientist" class="nav-link" data-scroll-target="#algar-telecom-uberlândia---data-scientist">Algar Telecom, Uberlândia - Data Scientist</a></li>
-  <li><a href="#bkpi-uberlândia---mobile-developer" id="toc-bkpi-uberlândia---mobile-developer" class="nav-link" data-scroll-target="#bkpi-uberlândia---mobile-developer">BKPi, Uberlândia - Mobile Developer</a></li>
-  <li><a href="#uansolutions-uberlândia---mobile-development-intern" id="toc-uansolutions-uberlândia---mobile-development-intern" class="nav-link" data-scroll-target="#uansolutions-uberlândia---mobile-development-intern">UanSolutions, Uberlândia - Mobile Development Intern</a></li>
-  </ul></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
-<div class="quarto-about-trestles content column-page-left">
-  <div class="about-entity">
-    <img src="photo.jpeg" class="about-image
-  round " style="height: 20em; width: 20em;">
+<main class="content" id="quarto-document-content">
+
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Paulo Oyama</h1>
+<h1 class="title">Monte Carlo Parte 2</h1>
 </div>
-<div class="quarto-title-meta column-page-left">
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
   </div>
+  
+
+
 </header>
-    <div class="about-links">
-  <a href="https://www.linkedin.com/in/paulo-oyama-27b470212/" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://github.com/PauloOyama" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><main class="content column-page-left" id="quarto-document-content">
-
-<section id="education" class="level1">
-<h1>Education</h1>
-<ul>
-<li><strong>Universidade Federal de Uberlândia (UFU), Uberlândia</strong>
-<ul>
-<li>Bachelor of Computer Science, Completed March 2024</li>
-<li>Participated in the Tutorial Education Program for 2 years;</li>
-<li>Completed scientific initiation project on noise reduction using neural networks with certification</li>
-<li>Graduation thesis on Metadata-based Recommendation Systems</li>
-</ul></li>
-<li><strong>Colégio Santo André, São José do Rio Preto</strong>
-<ul>
-<li>Completed High School in 2015</li>
-</ul></li>
-</ul>
-</section>
-<section id="experience" class="level1">
-<h1>Experience</h1>
-<section id="algar-telecom-uberlândia---data-scientist" class="level2">
-<h2 data-anchor-id="algar-telecom-uberlândia---data-scientist">Algar Telecom, Uberlândia - Data Scientist</h2>
-<ul>
-<li>September 2022 - Present</li>
-<li>Built, managed, and maintained workflows in Glue</li>
-<li>Created, managed, and maintained stacks in CloudFormation</li>
-<li>Developed Python scripts for data automation using pyspark</li>
-<li>Created dashboards for data visualization</li>
-<li>CI/CD with Jenkins</li>
-<li>Developed Sentiment Analysis models for NPS classification</li>
-</ul>
-</section>
-<section id="bkpi-uberlândia---mobile-developer" class="level2">
-<h2 data-anchor-id="bkpi-uberlândia---mobile-developer">BKPi, Uberlândia - Mobile Developer</h2>
-<ul>
-<li>December 2021 - June 2022</li>
-<li>State management</li>
-<li>Integrated with Firebase database</li>
-<li>Unit testing assistance</li>
-<li>CI/CD</li>
-</ul>
-</section>
-<section id="uansolutions-uberlândia---mobile-development-intern" class="level2">
-<h2 data-anchor-id="uansolutions-uberlândia---mobile-development-intern">UanSolutions, Uberlândia - Mobile Development Intern</h2>
-<ul>
-<li>February 2020 - August 2020</li>
-<li>Introduction to design patterns</li>
-<li>Application testing</li>
-<li>Used design tools</li>
-<li>Started learning Dart language with Flutter framework</li>
-</ul>
 
 
-</section>
-</section>
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main></div>
-</div>
- <!-- /main -->
+<p>Uma breve introdução ao Método de Monte Carlo&nbsp;#2 Agora, que conseguimos entender um pouco do porque ter sido criado e ter visto uma das implementações deste método, veremos também no que se baseia o este método. O que sustenta o Método de Monte Carlo&nbsp;? Explicaremos isso, de uma forma simplicada, pois sua prova é complexa e grande, para tanto nos atrelaremos mais a ideia do “Por que” e menos do “Como”. O método de M.C é sustentando pelo teorema da Lei dos Grandes Números (L.G.N ), este teorema tem a seguinte proposta, repita um determinado experimento um número considerável de vezes, pegue o resultado de cada um e faça sua média aritmética, o resultado é o valor esperado(E[X]). Existem várias aplicações para a L.G.N, a mostrada por exemplo, no post do Pi é a de Bernoulli, onde somente há duas probabilidades de ser sim ou não. Conceito de Esperança (E[X]). Há esperança em probabilidade, tem como ideia de que algo no final ou no limite irá /tenderá para um determinado número, no nosso caso, uma probabilidade, por isso seu nome, sua notação é dita E[X]. Imagine que você em um dia com muito tempo começa a jogar uma moeda para cima, a cada lançamento, você conta qual foi o resultado e lança-a novamente. A ideia de esperança se torna fácil de entender neste caso, nas primeiras horas, o número de vezes que caíram cara ou coroa tendem a não ser 1/2 (0.5), ou seja, nas poucas horas que você jogou um número “n” pequeno de vezes, a probabilidade tende para algum lado da moeda. Mas, você, entendiado, continua a jogar a moeda e contar seu resultado, ao fazer isso por um dia inteiro, você verá que o número de vezes que caíram cara e coroa tendem “magicamente” para 1/2, ou seja, ao jogar um número de “n” de vezes muito grande a probabilidade se aproximou de 0.5. Explicação matemática Considere que&nbsp;, Logo, como é o jogar de moeda, temos que, Assim, pela esperança temos que no limite, Veja que interessante, o gráfico mostrando a plotagem dos valores se aproximando de 1/2, conforme o número de lançamentos aumenta. Figura 1Utilizando o código em&nbsp;R lancamentos &lt;- sample (x=c(0 ,1) , size =5000 , replace = TRUE ) #o comando acima lanca a moeda 5000 vezes e guarda # este vetor de tamanho 5 mil na variavel lancamentos proporcao &lt;- cumsum ( lancamentos )/ 1:5000 #o comando acima calcula a media acumulada para cada # valor de n entre 1 e 5000 e guarda este vetor de #me dias em proporcao #os comandos a seguir gerararam a Figura 1 plot (x = 1:5000 , y = proporcao ,type = “l”, xlab = “nu mero de lanc amentos”, ylab = ” propor c~ao de caras “) abline (h = c(0.5) , col =”red”) Agora, vejamos como isso ocorre em um dado, utilizando os conceitos de esperança. É legal, utilizarmos um dado por que ele se distancia da distribuição de Bernoulli, no qual se aplicar para valores binários, como um dado tem 6 faces, temos 6 possíveis ocorrências de mesma probabilidade cada, saímos das Distribuições de Bernoulli e entramos em Distribuições Uniformes. Suponha que outro dia de tédio tenha chegado, mas desta vez, curiosamente você ao invés de lançar uma moeda, você está agora lançando dados e outra vez você anota o número da face que caiu para cima. É intrigante pensar, o que teremos como a média de todas as jogadas no final do dia (Esperança)&nbsp;? Resolução matemática Temos que, e que a probabilidade de cair alguma dessas faces em um dado não viciado, Portanto, na esperança, Veja, como fica a aproximação, Figura 2Utilizando o código em&nbsp;R res &lt;- c() for(i in 1:10000){ x &lt;- sample(c(1,2,3,4,5,6),1) res[i] &lt;- x } proporcao &lt;- cumsum ( res )/ 1:10000 #Plota Figura 2 plot (x = 1:10000 , y = proporcao ,type = “l”, ylab = “Media”, xlab = “Numero de Lancamentos”) abline (h = c(3.5) , col = “red”) Expansão: Uma vida inteira de lançamentos&nbsp;. Imagine agora, que ao invés de um dia entendiante, uma determinada pessoa faça isso por toda a sua vida, e no final de cada dia, depois de fazer todos os lançamentos do dia pega cada média final de cada dia e a escreve em um caderno, como seriam dadas as distribuição das médias de cada dia&nbsp;? res &lt;- c() dist &lt;-c() #For representando os 1000 dias da sua vida for(j in 1:1000){ #10000 lancamentos sao feitos a cada dia for(i in 1:10000){ x &lt;- sample(c(1,2,3,4,5,6),1) res[i] &lt;- x } # ao final de cada dia anota no caderno “dist” dist[j] &lt;- mean(res) } hist(dist) Veja que interessante, No final de sua vida, a chance da média diaria de lancamentos ter sido de 3.5 é maior do por exemplo 3.56 ou 3.46, ou seja, em um vida inteira, a chance maior é de que a média dos lançamentos diários fiquem por volta de 3.49~3.51, e quase nunca em sua vida um lançamento diário ficou por volta de 3.56 ou 3.46. Referências. Códigos e aulas do professor Pedro Franklin da UFU</p>
+<p>Caso, venha a ter algum tipo de erro ou coesão,por favor enviar mensagem.</p>
+
+
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -238,150 +172,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const disableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'prefetch';
-    }
-  }
-  const enableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'stylesheet';
-    }
-  }
-  const manageTransitions = (selector, allowTransitions) => {
-    const els = window.document.querySelectorAll(selector);
-    for (let i=0; i < els.length; i++) {
-      const el = els[i];
-      if (allowTransitions) {
-        el.classList.remove('notransition');
-      } else {
-        el.classList.add('notransition');
-      }
-    }
-  }
-  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-    let newTheme = '';
-    if(darkModeDefault) {
-      newTheme = isAlternate ? baseTheme : alternateTheme;
-    } else {
-      newTheme = isAlternate ? alternateTheme : baseTheme;
-    }
-    const changeGiscusTheme = () => {
-      // From: https://github.com/giscus/giscus/issues/336
-      const sendMessage = (message) => {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-      }
-      sendMessage({
-        setConfig: {
-          theme: newTheme
-        }
-      });
-    }
-    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-    if (isGiscussLoaded) {
-      changeGiscusTheme();
-    }
-  }
-  const toggleColorMode = (alternate) => {
-    // Switch the stylesheets
-    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-    manageTransitions('#quarto-margin-sidebar .nav-link', false);
-    if (alternate) {
-      enableStylesheet(alternateStylesheets);
-      for (const sheetNode of alternateStylesheets) {
-        if (sheetNode.id === "quarto-bootstrap") {
-          toggleBodyColorMode(sheetNode);
-        }
-      }
-    } else {
-      disableStylesheet(alternateStylesheets);
-      toggleBodyColorPrimary();
-    }
-    manageTransitions('#quarto-margin-sidebar .nav-link', true);
-    // Switch the toggles
-    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-    for (let i=0; i < toggles.length; i++) {
-      const toggle = toggles[i];
-      if (toggle) {
-        if (alternate) {
-          toggle.classList.add("alternate");     
-        } else {
-          toggle.classList.remove("alternate");
-        }
-      }
-    }
-    // Hack to workaround the fact that safari doesn't
-    // properly recolor the scrollbar when toggling (#1455)
-    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-      manageTransitions("body", false);
-      window.scrollTo(0, 1);
-      setTimeout(() => {
-        window.scrollTo(0, 0);
-        manageTransitions("body", true);
-      }, 40);  
-    }
-  }
-  const isFileUrl = () => { 
-    return window.location.protocol === 'file:';
-  }
-  const hasAlternateSentinel = () => {  
-    let styleSentinel = getColorSchemeSentinel();
-    if (styleSentinel !== null) {
-      return styleSentinel === "alternate";
-    } else {
-      return false;
-    }
-  }
-  const setStyleSentinel = (alternate) => {
-    const value = alternate ? "alternate" : "default";
-    if (!isFileUrl()) {
-      window.localStorage.setItem("quarto-color-scheme", value);
-    } else {
-      localAlternateSentinel = value;
-    }
-  }
-  const getColorSchemeSentinel = () => {
-    if (!isFileUrl()) {
-      const storageValue = window.localStorage.getItem("quarto-color-scheme");
-      return storageValue != null ? storageValue : localAlternateSentinel;
-    } else {
-      return localAlternateSentinel;
-    }
-  }
-  const darkModeDefault = true;
-  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-  // Dark / light mode switch
-  window.quartoToggleColorScheme = () => {
-    // Read the current dark / light value 
-    let toAlternate = !hasAlternateSentinel();
-    toggleColorMode(toAlternate);
-    setStyleSentinel(toAlternate);
-    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
   };
-  // Ensure there is a toggle, if there isn't float one in the top right
-  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-    const a = window.document.createElement('a');
-    a.classList.add('top-right');
-    a.classList.add('quarto-color-scheme-toggle');
-    a.href = "";
-    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-    const i = window.document.createElement("i");
-    i.classList.add('bi');
-    a.appendChild(i);
-    window.document.body.appendChild(a);
-  }
-  // Switch to dark mode if need be
-  if (hasAlternateSentinel()) {
-    toggleColorMode(true);
-  } else {
-    toggleColorMode(false);
-  }
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

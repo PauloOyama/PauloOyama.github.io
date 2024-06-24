@@ -7,5 +7,11 @@
   },
   "projects.qmd": {
     "projects.html": "14ab4635"
+  },
+  "portfolio/Monte_Carlo_Pt1.qmd": {
+    "Monte_Carlo_Pt1.html": "88b69705"
+  },
+  "portfolio/Monte_Carlo_Pt2.qmd": {
+    "Monte_Carlo_Pt2.html": "d694d87c"
   }
 }

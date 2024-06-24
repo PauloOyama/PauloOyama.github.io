@@ -1,6 +1,6 @@
 ---
+sidebar: false
 title: "Paulo Oyama"
-listing: false
 about:
   template: trestles
   image: photo.jpeg
@@ -8,12 +8,13 @@ about:
   links:
     - icon: linkedin
       text: LinkedIn
-      href: https://github.com
+      href: https://www.linkedin.com/in/paulo-oyama-27b470212/
     - icon: github
       text: Github
-      href: https://github.com
-repo-url: https://github.com/quarto-dev/quarto-demo
+      href: https://github.com/PauloOyama
+repo-url: https://github.com/PauloOyama/PauloOyama.github.io
 repo-actions: [edit, issue]
+bread-crumbs: false
 ---
 
 # Education
