@@ -5,7 +5,7 @@ project:
 website:
   title: "Paulo Oyama"
   page-navigation: true
-  bread-crumbs: false
+  bread-crumbs: true
   back-to-top-navigation: true
   page-footer:
     center: 
@@ -39,11 +39,14 @@ website:
 
 format:
   html:
-    page-layout: full
     theme: 
       dark: darkly
       light: lux
-    toc: true
+    grid:
+      sidebar-width: 150px
+      body-width: 1200px
+      margin-width: 300px
+      gutter-width: 1.5rem
 
 editor: visual
 

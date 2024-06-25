@@ -1,6 +1,7 @@
 ---
 sidebar: false
 title: "Paulo Oyama"
+back-to-top-navigation: false
 about:
   template: trestles
   image: photo.jpeg

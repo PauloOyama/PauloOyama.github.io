@@ -5,5 +5,11 @@
       "/portfolio/Monte_Carlo_Pt1.html",
       "/portfolio/Monte_Carlo_Pt2.html"
     ]
+  },
+  {
+    "listing": "/portfolio/Monte_Carlo_Pt1.html",
+    "items": [
+      "/portfolio/Monte_Carlo_Pt2.html"
+    ]
   }
 ]
