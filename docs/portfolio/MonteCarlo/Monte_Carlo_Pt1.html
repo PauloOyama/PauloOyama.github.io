@@ -77,9 +77,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -247,12 +244,12 @@ window.Quarto = {
   <li><a href="#uma-breve-introdução-ao-método-de-monte-carlo-m.c" id="toc-uma-breve-introdução-ao-método-de-monte-carlo-m.c" class="nav-link active" data-scroll-target="#uma-breve-introdução-ao-método-de-monte-carlo-m.c">Uma breve introdução ao Método de Monte Carlo (M.C)</a>
   <ul class="collapse">
   <li><a href="#qual-a-finalidade-do-método-de-monte-carlo" id="toc-qual-a-finalidade-do-método-de-monte-carlo" class="nav-link" data-scroll-target="#qual-a-finalidade-do-método-de-monte-carlo">Qual a finalidade do método de Monte Carlo?</a></li>
-  <li><a href="#estimando-piπ-por-meio-de-variáveis-aleatórias-por-m.c" id="toc-estimando-piπ-por-meio-de-variáveis-aleatórias-por-m.c" class="nav-link" data-scroll-target="#estimando-piπ-por-meio-de-variáveis-aleatórias-por-m.c">Estimando Pi(π) por meio de variáveis aleatórias por M.C</a></li>
+  <li><a href="#estimando-piπ-por-meio-de-monte-carlo" id="toc-estimando-piπ-por-meio-de-monte-carlo" class="nav-link" data-scroll-target="#estimando-piπ-por-meio-de-monte-carlo">Estimando Pi(π) por meio de Monte Carlo</a></li>
   <li><a href="#explicação-matemática" id="toc-explicação-matemática" class="nav-link" data-scroll-target="#explicação-matemática">Explicação Matemática</a>
   <ul class="collapse">
   <li><a href="#utilizando-o-código-em-r" id="toc-utilizando-o-código-em-r" class="nav-link" data-scroll-target="#utilizando-o-código-em-r">Utilizando o código em R</a></li>
   </ul></li>
-  <li><a href="#referências" id="toc-referências" class="nav-link" data-scroll-target="#referências">Referências:</a></li>
+  <li><a href="#referências" id="toc-referências" class="nav-link" data-scroll-target="#referências">Referências</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -286,8 +283,8 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="qual-a-finalidade-do-método-de-monte-carlo">Qual a finalidade do método de Monte Carlo?</h2>
 <p>Um dos intuitos em se criar esse método é ser uma ferramenta mais fácil para conseguir atingir certos objetivos, a matemática dividi-se em pura e aplicada, a pura com muito rigor metodológico e cálculos complexos e a aplicada baseando-se mais em métodos experimentais para chegar aos resultados de problemas aplicados ao dia a dia. O método de M.C por sua vez, busca juntar as melhores partes da matemática pura com as da parte aplicada, trocando as partes fracas que compõe a matemática pura como a alta complexidade das equações por meios mais fáceis como os métodos experimentais da aplicada. Em resumo, esta ferramenta usa de variáveis aleatórias e um grande número de experimentos, que por sua vez sustentandas pela L.G.N (Lei dos Grandes Números) resulta em um resultado aproximado do problema.</p>
 </section>
-<section id="estimando-piπ-por-meio-de-variáveis-aleatórias-por-m.c" class="level2">
-<h2 class="anchored" data-anchor-id="estimando-piπ-por-meio-de-variáveis-aleatórias-por-m.c">Estimando Pi(π) por meio de variáveis aleatórias por M.C</h2>
+<section id="estimando-piπ-por-meio-de-monte-carlo" class="level2">
+<h2 class="anchored" data-anchor-id="estimando-piπ-por-meio-de-monte-carlo">Estimando Pi(π) por meio de Monte Carlo</h2>
 <p><strong><em>Imagine que, você começa a fazer uma prova de matemática e uma determinada questão te pede o valor Pi (π) e você somente pode usar um computador que gerará valores aleatórios em um determinado intervalo, como fazer?</em></strong></p>
 <p>A princípio essa pergunta é maluca, porém sua resolução é elegante e curiosa. Mostraremos primeiramente a ideia matemática e após isso o código por meio da linguagem <a href="https://www.rdocumentation.org/">R</a> mostrando sua resolução.</p>
 </section>
@@ -309,12 +306,7 @@ window.Quarto = {
 <section id="utilizando-o-código-em-r" class="level3">
 <h3 class="anchored" data-anchor-id="utilizando-o-código-em-r">Utilizando o código em R</h3>
 <p>Primeiramente, geraremos dois conjuntos com 100.000 pontos aleatórios cada com nosso computador, esses dois conjuntos tem intervalos fechados que que vão de [-1,1] (o tamanho do intervalo é arbitrário, porém um intervalo menor precisará de menos pontos para conseguir uma estimativa de π boa) e atribuiremos ao primeiro conjunto uma variável x e ao segundo á uma variável y, que serão o par ordenado (x,y).</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="Imgs/monte_carlo_pt1_circle.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1" title="Circle"><img src="Imgs/monte_carlo_pt1_circle.png" class="img-fluid figure-img" alt="Circle"></a></p>
-<figcaption>Circle</figcaption>
-</figure>
-</div>
+<p><img src="Imgs/monte_carlo_pt1_circle.png" class="img-fluid"></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Gera um vetor de tamanho #100000 com todos os #campos preenchidos #com um valor entre -1 e 1 </span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="dv">100000</span>,<span class="sc">-</span><span class="dv">1</span>,<span class="dv">1</span>) </span>
@@ -342,7 +334,7 @@ window.Quarto = {
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="Monte_Carlo_Pt1_files/figure-html/unnamed-chunk-3-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="Monte_Carlo_Pt1_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672"></a></p>
+<p><img src="Monte_Carlo_Pt1_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -350,7 +342,7 @@ window.Quarto = {
 </section>
 </section>
 <section id="referências" class="level2">
-<h2 class="anchored" data-anchor-id="referências">Referências:</h2>
+<h2 class="anchored" data-anchor-id="referências">Referências</h2>
 <ul>
 <li><p>Código e explicação usados em aula do professor Pedro Franklin da UFU</p></li>
 <li><p><a href="https://www.scielo.br/j/qn/a/sJtBCMjy58FLgy74kqRyBmB/?lang=pt">Artigo2008_MMC</a></p></li>
@@ -359,9 +351,6 @@ window.Quarto = {
 </ul>
 
 
-<div class="hidden" aria-hidden="true">
-<span class="glightbox-desc lightbox-desc-1">Circle</span>
-</div>
 </section>
 </section>
 
@@ -952,31 +941,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"loop":false,"closeEffect":"zoom","descPosition":"bottom","openEffect":"zoom","selector":".lightbox"});
-window.onload = () => {
-  lightboxQuarto.on('slide_before_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    const href = trigger.getAttribute('href');
-    if (href !== null) {
-      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-      if (imgEl !== null) {
-        const srcAttr = imgEl.getAttribute("src");
-        if (srcAttr && srcAttr.startsWith("data:")) {
-          slideConfig.href = srcAttr;
-        }
-      }
-    } 
-  });
-
-  lightboxQuarto.on('slide_after_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    if (window.Quarto?.typesetMath) {
-      window.Quarto.typesetMath(slideNode);
-    }
-  });
-
-};
-          </script>
 
 
 

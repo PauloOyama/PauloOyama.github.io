@@ -1,6 +1,7 @@
 ---
 title: "O que é ?"
 bread-crumbs: false
+highlight-style: arrow
 ---
 
 # Uma breve introdução ao Método de Monte Carlo (M.C)
@@ -11,7 +12,7 @@ O post em si é uma forma de explicação de uma maneira breve porém concisa, s
 
 Um dos intuitos em se criar esse método é ser uma ferramenta mais fácil para conseguir atingir certos objetivos, a matemática dividi-se em pura e aplicada, a pura com muito rigor metodológico e cálculos complexos e a aplicada baseando-se mais em métodos experimentais para chegar aos resultados de problemas aplicados ao dia a dia. O método de M.C por sua vez, busca juntar as melhores partes da matemática pura com as da parte aplicada, trocando as partes fracas que compõe a matemática pura como a alta complexidade das equações por meios mais fáceis como os métodos experimentais da aplicada. Em resumo, esta ferramenta usa de variáveis aleatórias e um grande número de experimentos, que por sua vez sustentandas pela L.G.N (Lei dos Grandes Números) resulta em um resultado aproximado do problema.
 
-## Estimando Pi(π) por meio de variáveis aleatórias por M.C
+## Estimando Pi(π) por meio de Monte Carlo
 
 ***Imagine que, você começa a fazer uma prova de matemática e uma determinada questão te pede o valor Pi (π) e você somente pode usar um computador que gerará valores aleatórios em um determinado intervalo, como fazer?***
 
@@ -43,7 +44,7 @@ $$
 
 Primeiramente, geraremos dois conjuntos com 100.000 pontos aleatórios cada com nosso computador, esses dois conjuntos tem intervalos fechados que que vão de \[-1,1\] (o tamanho do intervalo é arbitrário, porém um intervalo menor precisará de menos pontos para conseguir uma estimativa de π boa) e atribuiremos ao primeiro conjunto uma variável x e ao segundo á uma variável y, que serão o par ordenado (x,y).
 
-![Circle](Imgs/monte_carlo_pt1_circle.png)
+![](Imgs/monte_carlo_pt1_circle.png)
 
 ```{R}
 #Gera um vetor de tamanho #100000 com todos os #campos preenchidos #com um valor entre -1 e 1 
@@ -77,7 +78,7 @@ points(x[ circulo ], y[ circulo ], col = " orange ", pch = 20, cex = 0.5)
 points(x[! circulo ], y[! circulo ], col = " blue ", pch = 20, cex = 0.5)
 ```
 
-## Referências:
+## Referências
 
 -   Código e explicação usados em aula do professor Pedro Franklin da UFU
 

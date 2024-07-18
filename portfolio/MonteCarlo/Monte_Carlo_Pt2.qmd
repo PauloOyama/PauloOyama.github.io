@@ -1,7 +1,7 @@
 ---
 title: "Uma vida inteira..."
-execute:
-  echo: false
+bread-crumbs: false
+highlight-style: arrow
 ---
 
 # Uma breve introdução ao Método de Monte Carlo #2

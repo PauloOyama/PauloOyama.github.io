@@ -2,11 +2,9 @@ project:
   type: website
   output-dir: docs
 
-lightbox: true
-code-block-bg: "#EEEEEE"
-highlight-style: github
-code-block-border-left: "#334061"
+
 sidebar: false
+code-block-border-left: "#334061"
 
 website:
   page-navigation: true
@@ -36,7 +34,6 @@ website:
           - text: Report a Bug
             url:  https://github.com/PauloOyama/PauloOyama.github.io/issues
     background: 'dark'
-    search: true
     right:
       - text: "Home"
         href: index.qmd
@@ -45,6 +42,7 @@ website:
 
 format:
   html:
+    mainfont: "Tahoma"
     lang: pt
     code-overflow: scroll
     theme: 
