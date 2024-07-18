@@ -282,9 +282,8 @@ window.Quarto = {
 <p><span class="math display">\[
   \pi = 4 \times P(A)
 \]</span></p>
-</section>
-<section id="utilizando-o-código-em-r" class="level2">
-<h2 class="anchored" data-anchor-id="utilizando-o-código-em-r">Utilizando o código em R</h2>
+<section id="utilizando-o-código-em-r" class="level3">
+<h3 class="anchored" data-anchor-id="utilizando-o-código-em-r">Utilizando o código em R</h3>
 <p>Primeiramente, geraremos dois conjuntos com 100.000 pontos aleatórios cada com nosso computador, esses dois conjuntos tem intervalos fechados que que vão de [-1,1] (o tamanho do intervalo é arbitrário, porém um intervalo menor precisará de menos pontos para conseguir uma estimativa de π boa) e atribuiremos ao primeiro conjunto uma variável x e ao segundo á uma variável y, que serão o par ordenado (x,y).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -307,13 +306,33 @@ window.Quarto = {
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">sum</span>( circulo )<span class="sc">/</span> <span class="dv">100000</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Como temos, a P(A) na variavel p, e temos também a Área do quadrado Q, conseguimos o valor de Pi, como justificado matematicamente acima. piresultado &lt;- 4*p # piresultado = 3.13988 Veja como fica o plot dos valores do vetor booelano circulo, plot (x, y, type = “n”) # Pontos que cairam dentro em laranja points (x[ circulo ], y[ circulo ], col = ” orange “, pch = 20, cex = 0.5) # Pontos que cairam fora em azul points (x[! circulo ], y[! circulo ], col =” blue “, pch = 20, cex = 0.5) Referências: Código e explicação usados em aula do professor Pedro Franklin da UFU Artigo2008_MMC Introdução aos Métodos de Monte Carlo Avançados - Adrian Hinojosa Luna MÉTODO MONTE CARLO E SUAS APLICAÇÕES - ADMILSON RODRIGUES DE CARVALHO</p>
+<p>Como temos, a P(A) na variavel p, e temos também a Área do quadrado Q, conseguimos o valor de Pi, como justificado matematicamente acima.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span><span class="sc">+</span><span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 3</code></pre>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>piresultado <span class="ot">&lt;-</span> <span class="dv">4</span><span class="sc">*</span>p </span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># piresultado = 3.13988 </span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x, y, <span class="at">type =</span> <span class="st">"n"</span>) </span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Pontos que cairam dentro em laranja </span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(x[ circulo ], y[ circulo ], <span class="at">col =</span> <span class="st">" orange "</span>, <span class="at">pch =</span> <span class="dv">20</span>, <span class="at">cex =</span> <span class="fl">0.5</span>) </span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Pontos que cairam fora em azul </span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(x[<span class="sc">!</span> circulo ], y[<span class="sc">!</span> circulo ], <span class="at">col =</span> <span class="st">" blue "</span>, <span class="at">pch =</span> <span class="dv">20</span>, <span class="at">cex =</span> <span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Monte_Carlo_Pt1_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
 </div>
 </div>
+</div>
+</section>
+</section>
+<section id="referências" class="level2">
+<h2 class="anchored" data-anchor-id="referências">Referências:</h2>
+<ul>
+<li><p>Código e explicação usados em aula do professor Pedro Franklin da UFU</p></li>
+<li><p><a href="https://www.scielo.br/j/qn/a/sJtBCMjy58FLgy74kqRyBmB/?lang=pt">Artigo2008_MMC</a></p></li>
+<li><p><a href="https://www.est.ufmg.br/portal/wp-content/uploads/2023/01/RTE_01_2019.pdf">Introdução aos Métodos de Monte Carlo Avançados-Adrian Hinojosa Luna</a></p></li>
+<li><p><a href="http://repositorio.ufrr.br:8080/jspui/bitstream/prefix/388/1/M%C3%A9todo%20Monte%20Carlo%20e%20suas%20aplica%C3%A7%C3%B5es...%20Carvalho.pdf">MÉTODO MONTE CARLO E SUAS APLICAÇÕES-ADMILSON RODRIGUES DE CARVALHO</a></p></li>
+</ul>
 
 
 

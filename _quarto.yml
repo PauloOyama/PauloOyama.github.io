@@ -15,10 +15,12 @@ website:
     style: "floating"
     search: true
     contents:
-      - section: "Layout"
+      - section: "Portfolio"
         contents:
           - projects.qmd
-  
+          - section: "Monte Carlo"
+            contents: 
+              - Monte_Carlo_Pt1.qmd
 
   navbar:
     tools:
