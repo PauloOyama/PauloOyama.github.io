@@ -7,9 +7,15 @@
     "projects.qmd": [
       "posts",
       "B3049D40",
-      "portfolio"
+      "portfolio",
+      "portfolio/*/index.qmd",
+      "portfolio/MonteCarlo/index.qmd",
+      "index.qmd"
     ],
     "portfolio\\Monte_Carlo_Pt1.qmd": [
+      "B3049D40"
+    ],
+    "portfolio\\MonteCarlo\\Monte_Carlo_Pt1.qmd": [
       "B3049D40"
     ]
   }

@@ -1,7 +1,8 @@
 ---
-sidebar: false
+#sidebar: false
 title: "Paulo Oyama"
 back-to-top-navigation: false
+toc: false
 about:
   template: trestles
   image: photo.jpeg
@@ -13,45 +14,54 @@ about:
     - icon: github
       text: Github
       href: https://github.com/PauloOyama
+    - text: Email
+      icon: envelope
+      href: mailto:papaloyama@gmail.com@gmail.com
 repo-url: https://github.com/PauloOyama/PauloOyama.github.io
 repo-actions: [edit, issue]
-bread-crumbs: false
 ---
 
-# Education
+## COMPETÊNCIAS
 
-- **Universidade Federal de Uberlândia (UFU), Uberlândia**
-  - Bachelor of Computer Science, Completed March 2024
-  - Participated in the Tutorial Education Program for 2 years;
-  - Completed scientific initiation project on noise reduction using neural networks with certification
-  - Graduation thesis on Metadata-based Recommendation Systems
+-   Experiência em linguagens de programação (R, Python, SQL);
+-   Ferramentas de análise de dados (pyspark, pandas, scikit);
+-   Experiência em ferramentas de controle de versão (GitHub, BitBucket, Jenkins);
+-   Serviços da AWS como Athena, Glue, S3, CloudFormation, CloudWatch, EC2, Lambda;
+-   Experiência em Banco de Dados SQL (Oracle, MySQL);
+-   Inglês avançado (escrita e leitura).
 
+## EXPERIÊNCIA
 
-- **Colégio Santo André, São José do Rio Preto**
-  - Completed High School in 2015
+### Cientista de Dados na Algar Telecom, Uberlândia
 
-# Experience
+*Setembro de 2022 - Atualmente*
 
-## Algar Telecom, Uberlândia - Data Scientist
-- September 2022 - Present
-- Built, managed, and maintained workflows in Glue
-- Created, managed, and maintained stacks in CloudFormation
-- Developed Python scripts for data automation using pyspark
-- Created dashboards for data visualization
-- CI/CD with Jenkins
-- Developed Sentiment Analysis models for NPS classification
+-   Construção, gerenciamento e manutenção de Workflows no Glue e StepFunction;
+-   Construção, gerenciamento e manutenção de stacks no CloudFormation;
+-   Criação de scripts em Python para automatização de dados usando pyspark;
+-   CI/CD com Jenkins;
+-   Criação de dashboards para visualização dos dados.
 
-## BKPi, Uberlândia - Mobile Developer
-- December 2021 - June 2022
-- State management
-- Integrated with Firebase database
-- Unit testing assistance
-- CI/CD
+### Desenvolvedor de Software na BKPi, Uberlândia
 
-## UanSolutions, Uberlândia - Mobile Development Intern
-- February 2020 - August 2020
-- Introduction to design patterns
-- Application testing
-- Used design tools
-- Started learning Dart language with Flutter framework
+*Dezembro de 2021 - Junho de 2022*
 
+-   Gerenciamento de estados;
+-   Integração com banco de dados no Firebase.
+
+## ESCOLARIDADE
+
+### Mestrado em Inteligência Artificial
+
+*Agosto de 2024 - Até 2026*
+
+-   **Universidade Federal de Uberlândia (UFU), Uberlândia**
+
+### Ensino Superior Completo
+
+*De 2019 - Março de 2024*
+
+-   **Universidade Federal de Uberlândia (UFU), Uberlândia**
+-   Trabalho de conclusão de curso em Sistemas de Recomendação Baseado em Metadados;
+-   3 anos participando do Programa de Educação Tutorial (PET);
+-   Projeto de iniciação científica concluído com tema em abafamento de ruídos por meio de redes neurais com certificado.

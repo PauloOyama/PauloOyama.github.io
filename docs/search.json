@@ -1,91 +1,232 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Paulo Oyama",
-    "section": "",
-    "text": "Universidade Federal de Uberlândia (UFU), Uberlândia\n\nBachelor of Computer Science, Completed March 2024\nParticipated in the Tutorial Education Program for 2 years;\nCompleted scientific initiation project on noise reduction using neural networks with certification\nGraduation thesis on Metadata-based Recommendation Systems\n\nColégio Santo André, São José do Rio Preto\n\nCompleted High School in 2015"
-  },
-  {
-    "objectID": "index.html#algar-telecom-uberlândia---data-scientist",
-    "href": "index.html#algar-telecom-uberlândia---data-scientist",
-    "title": "Paulo Oyama",
-    "section": "Algar Telecom, Uberlândia - Data Scientist",
-    "text": "Algar Telecom, Uberlândia - Data Scientist\n\nSeptember 2022 - Present\nBuilt, managed, and maintained workflows in Glue\nCreated, managed, and maintained stacks in CloudFormation\nDeveloped Python scripts for data automation using pyspark\nCreated dashboards for data visualization\nCI/CD with Jenkins\nDeveloped Sentiment Analysis models for NPS classification"
-  },
-  {
-    "objectID": "index.html#bkpi-uberlândia---mobile-developer",
-    "href": "index.html#bkpi-uberlândia---mobile-developer",
-    "title": "Paulo Oyama",
-    "section": "BKPi, Uberlândia - Mobile Developer",
-    "text": "BKPi, Uberlândia - Mobile Developer\n\nDecember 2021 - June 2022\nState management\nIntegrated with Firebase database\nUnit testing assistance\nCI/CD"
-  },
-  {
-    "objectID": "index.html#uansolutions-uberlândia---mobile-development-intern",
-    "href": "index.html#uansolutions-uberlândia---mobile-development-intern",
-    "title": "Paulo Oyama",
-    "section": "UanSolutions, Uberlândia - Mobile Development Intern",
-    "text": "UanSolutions, Uberlândia - Mobile Development Intern\n\nFebruary 2020 - August 2020\nIntroduction to design patterns\nApplication testing\nUsed design tools\nStarted learning Dart language with Flutter framework"
-  },
-  {
     "objectID": "projects.html",
     "href": "projects.html",
     "title": "Portfolio",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMonte Carlo\n\n\n\n\n\n\nPaulo Oyama\n\n\nJun 24, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nMonte Carlo Parte 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n Back to top",
+    "text": "Olá! Gosto de desafios computacionais e tenho dedicado minha carreira ao desenvolvimento de soluções inovadoras em ciência de dados e engenharia de software.\nAbaixo, destaco alguns dos projetos que realizei, que demonstram minha capacidade de aplicar conhecimentos teóricos em cenários práticos e complexos, incluindo projetos pessoais desenvolvidos durante a faculdade e no meu dia a dia.\n\n\n\n\n\n\n\n\nMonte Carlo\n\n\n\n\n\n\nPaulo Oyama\n\n\n24 de jun. de 2024\n\n\n\n\n\n\n\n\nNenhum item correspondente\n\n\n\n\n\n\n De volta ao topo"
+  },
+  {
+    "objectID": "portfolio/MonteCarlo/Monte_Carlo_Pt1.html",
+    "href": "portfolio/MonteCarlo/Monte_Carlo_Pt1.html",
+    "title": "O que é ?",
+    "section": "",
+    "text": "O post em si é uma forma de explicação de uma maneira breve porém concisa, sobre o que é o método de Monte Carlo e possivelmente um futuro post no qual haverá um estudo sobre as diferenças desta ferramenta em detrimento dos métodos numéricos convencionais.\n\n\nUm dos intuitos em se criar esse método é ser uma ferramenta mais fácil para conseguir atingir certos objetivos, a matemática dividi-se em pura e aplicada, a pura com muito rigor metodológico e cálculos complexos e a aplicada baseando-se mais em métodos experimentais para chegar aos resultados de problemas aplicados ao dia a dia. O método de M.C por sua vez, busca juntar as melhores partes da matemática pura com as da parte aplicada, trocando as partes fracas que compõe a matemática pura como a alta complexidade das equações por meios mais fáceis como os métodos experimentais da aplicada. Em resumo, esta ferramenta usa de variáveis aleatórias e um grande número de experimentos, que por sua vez sustentandas pela L.G.N (Lei dos Grandes Números) resulta em um resultado aproximado do problema.\n\n\n\nImagine que, você começa a fazer uma prova de matemática e uma determinada questão te pede o valor Pi (π) e você somente pode usar um computador que gerará valores aleatórios em um determinado intervalo, como fazer?\nA princípio essa pergunta é maluca, porém sua resolução é elegante e curiosa. Mostraremos primeiramente a ideia matemática e após isso o código por meio da linguagem R mostrando sua resolução.\n\n\n\nConsidere o quadrado \\(Q\\) de vértices \\((-1, 1), (1,1), (1,-1)\\) e \\((-1,-1)\\) e considere também o círculo C de raio 1, circunscrito em Q.\nSeja A, o seguinte conjunto:\n\\[\n  A = \\{ (x,y) \\in \\mathbb{Q}; x^2 + y^2 \\leq 1 \\}\n\\]\nOu seja, o conjunto A é formado pelos pontos do quadrado Q que estão dentro da círculo C (\\(x² + y² ≤ 1\\)). Dessa forma, P(A) representa a probabilidade de sortear um número que esteja dentro do círculo.Logo,\n\\[\n  P(A) = \\frac{Área \\space de \\space C}{Área \\space de \\space Q} = \\frac{\\pi \\times 1^2}{2^2} = \\frac{\\pi}{4}\n\\]\ne, por consequência,\n\\[\n  \\pi = 4 \\times P(A)\n\\]\n\n\nPrimeiramente, geraremos dois conjuntos com 100.000 pontos aleatórios cada com nosso computador, esses dois conjuntos tem intervalos fechados que que vão de [-1,1] (o tamanho do intervalo é arbitrário, porém um intervalo menor precisará de menos pontos para conseguir uma estimativa de π boa) e atribuiremos ao primeiro conjunto uma variável x e ao segundo á uma variável y, que serão o par ordenado (x,y).\n\n\n\nCircle\n\n\n\n#Gera um vetor de tamanho #100000 com todos os #campos preenchidos #com um valor entre -1 e 1 \nx &lt;- runif(100000,-1,1) \ny &lt;- runif(100000,-1,1) \n\nApós isso, devemos ver quantos pontos caíram dentro do círculo C e quantos pontos caíram fora, tendo o número de pontos que caíram dentro é fácil determinar a probabilidade de ter caído dentro do círculo P(A), já é só dividirmos pelo total de pontos que foram sorteados (no caso, 100.000).\n\n# Circulo de centro na origem (0,0) de raio 1 \ncirculo &lt;- x^2 + y^2 &lt;= 1 \n# O vetor circulo detem valores TRUE se cairam dentro, e FALSE se \n# fora; \\# sum( circulo ) soma +1 nos indices TRUE e soma +0 \n# nos de valor FALSE \n\np &lt;- sum( circulo )/ 100000 \n\nComo temos, a P(A) na variavel p, e temos também a Área do quadrado Q, conseguimos o valor de Pi, como justificado matematicamente acima.\n\npiresultado &lt;- 4*p \n# piresultado = 3.13988 \nplot(x, y, type = \"n\") \n# Pontos que cairam dentro em laranja \npoints(x[ circulo ], y[ circulo ], col = \" orange \", pch = 20, cex = 0.5) \n# Pontos que cairam fora em azul \npoints(x[! circulo ], y[! circulo ], col = \" blue \", pch = 20, cex = 0.5)\n\n\n\n\n\n\n\n\n\n\n\n\n\nCódigo e explicação usados em aula do professor Pedro Franklin da UFU\nArtigo2008_MMC\nIntrodução aos Métodos de Monte Carlo Avançados-Adrian Hinojosa Luna\nMÉTODO MONTE CARLO E SUAS APLICAÇÕES-ADMILSON RODRIGUES DE CARVALHO\n\n\n\n\nCircle",
     "crumbs": [
       "Home",
-      "Portfolio",
-      "Portfolio"
+      "Estudo",
+      "O que é ?"
     ]
   },
   {
-    "objectID": "portfolio/Monte_Carlo_Pt1.html",
-    "href": "portfolio/Monte_Carlo_Pt1.html",
-    "title": "Monte Carlo",
+    "objectID": "portfolio/MonteCarlo/Monte_Carlo_Pt1.html#qual-a-finalidade-do-método-de-monte-carlo",
+    "href": "portfolio/MonteCarlo/Monte_Carlo_Pt1.html#qual-a-finalidade-do-método-de-monte-carlo",
+    "title": "O que é ?",
     "section": "",
-    "text": "O post em si é uma forma de explicação de uma maneira breve porém concisa, sobre o que é o método de Monte Carlo e possivelmente um futuro post no qual haverá um estudo sobre as diferenças desta ferramenta em detrimento dos métodos numéricos convencionais.\n\n\nUm dos intuitos em se criar esse método é ser uma ferramenta mais fácil para conseguir atingir certos objetivos, a matemática dividi-se em pura e aplicada, a pura com muito rigor metodológico e cálculos complexos e a aplicada baseando-se mais em métodos experimentais para chegar aos resultados de problemas aplicados ao dia a dia. O método de M.C por sua vez, busca juntar as melhores partes da matemática pura com as da parte aplicada, trocando as partes fracas que compõe a matemática pura como a alta complexidade das equações por meios mais fáceis como os métodos experimentais da aplicada. Em resumo, esta ferramenta usa de variáveis aleatórias e um grande número de experimentos, que por sua vez sustentandas pela L.G.N (Lei dos Grandes Números) resulta em um resultado aproximado do problema.\n\n\n\nImagine que, você começa a fazer uma prova de matemática e uma determinada questão te pede o valor Pi (π) e você somente pode usar um computador que gerará valores aleatórios em um determinado intervalo, como fazer?\nA princípio essa pergunta é maluca, porém sua resolução é elegante e curiosa. Mostraremos primeiramente a ideia matemática e após isso o código por meio da linguagem R mostrando sua resolução.\n\n\n\nConsidere o quadrado \\(Q\\) de vértices \\((-1, 1), (1,1), (1,-1)\\) e \\((-1,-1)\\) e considere também o círculo C de raio 1, circunscrito em Q.\nSeja A, o seguinte conjunto:\n\\[\n  A = \\{ (x,y) \\in \\mathbb{Q}; x^2 + y^2 \\leq 1 \\}\n\\]\nOu seja, o conjunto A é formado pelos pontos do quadrado Q que estão dentro da círculo C (\\(x² + y² ≤ 1\\)). Dessa forma, P(A) representa a probabilidade de sortear um número que esteja dentro do círculo.Logo,\n\\[\n  P(A) = \\frac{Área \\space de \\space C}{Área \\space de \\space Q} = \\frac{\\pi \\times 1^2}{2^2} = \\frac{\\pi}{4}\n\\]\ne, por consequência,\n\\[\n  \\pi = 4 \\times P(A)\n\\]\n\n\nPrimeiramente, geraremos dois conjuntos com 100.000 pontos aleatórios cada com nosso computador, esses dois conjuntos tem intervalos fechados que que vão de [-1,1] (o tamanho do intervalo é arbitrário, porém um intervalo menor precisará de menos pontos para conseguir uma estimativa de π boa) e atribuiremos ao primeiro conjunto uma variável x e ao segundo á uma variável y, que serão o par ordenado (x,y).\n\n\n\nElephant\n\n\n\n#Gera um vetor de tamanho #100000 com todos os #campos preenchidos #com um valor entre -1 e 1 \nx &lt;- runif(100000,-1,1) \ny &lt;- runif(100000,-1,1) \n\nApós isso, devemos ver quantos pontos caíram dentro do círculo C e quantos pontos caíram fora, tendo o número de pontos que caíram dentro é fácil determinar a probabilidade de ter caído dentro do círculo P(A), já é só dividirmos pelo total de pontos que foram sorteados (no caso, 100.000).\n\n# Circulo de centro na origem (0,0) de raio 1 \ncirculo &lt;- x^2 + y^2 &lt;= 1 \n# O vetor circulo detem valores TRUE se cairam dentro, e FALSE se \n# fora; \\# sum( circulo ) soma +1 nos indices TRUE e soma +0 \n# nos de valor FALSE \n\np &lt;- sum( circulo )/ 100000 \n\nComo temos, a P(A) na variavel p, e temos também a Área do quadrado Q, conseguimos o valor de Pi, como justificado matematicamente acima.\n\npiresultado &lt;- 4*p \n# piresultado = 3.13988 \nplot(x, y, type = \"n\") \n# Pontos que cairam dentro em laranja \npoints(x[ circulo ], y[ circulo ], col = \" orange \", pch = 20, cex = 0.5) \n# Pontos que cairam fora em azul \npoints(x[! circulo ], y[! circulo ], col = \" blue \", pch = 20, cex = 0.5)\n\n\n\n\n\n\n\n\n\n\n\n\n\nCódigo e explicação usados em aula do professor Pedro Franklin da UFU\nArtigo2008_MMC\nIntrodução aos Métodos de Monte Carlo Avançados-Adrian Hinojosa Luna\nMÉTODO MONTE CARLO E SUAS APLICAÇÕES-ADMILSON RODRIGUES DE CARVALHO"
+    "text": "Um dos intuitos em se criar esse método é ser uma ferramenta mais fácil para conseguir atingir certos objetivos, a matemática dividi-se em pura e aplicada, a pura com muito rigor metodológico e cálculos complexos e a aplicada baseando-se mais em métodos experimentais para chegar aos resultados de problemas aplicados ao dia a dia. O método de M.C por sua vez, busca juntar as melhores partes da matemática pura com as da parte aplicada, trocando as partes fracas que compõe a matemática pura como a alta complexidade das equações por meios mais fáceis como os métodos experimentais da aplicada. Em resumo, esta ferramenta usa de variáveis aleatórias e um grande número de experimentos, que por sua vez sustentandas pela L.G.N (Lei dos Grandes Números) resulta em um resultado aproximado do problema.",
+    "crumbs": [
+      "Home",
+      "Estudo",
+      "O que é ?"
+    ]
   },
   {
-    "objectID": "portfolio/Monte_Carlo_Pt2.html",
-    "href": "portfolio/Monte_Carlo_Pt2.html",
+    "objectID": "portfolio/MonteCarlo/Monte_Carlo_Pt1.html#estimando-piπ-por-meio-de-variáveis-aleatórias-por-m.c",
+    "href": "portfolio/MonteCarlo/Monte_Carlo_Pt1.html#estimando-piπ-por-meio-de-variáveis-aleatórias-por-m.c",
+    "title": "O que é ?",
+    "section": "",
+    "text": "Imagine que, você começa a fazer uma prova de matemática e uma determinada questão te pede o valor Pi (π) e você somente pode usar um computador que gerará valores aleatórios em um determinado intervalo, como fazer?\nA princípio essa pergunta é maluca, porém sua resolução é elegante e curiosa. Mostraremos primeiramente a ideia matemática e após isso o código por meio da linguagem R mostrando sua resolução.",
+    "crumbs": [
+      "Home",
+      "Estudo",
+      "O que é ?"
+    ]
+  },
+  {
+    "objectID": "portfolio/MonteCarlo/Monte_Carlo_Pt1.html#explicação-matemática",
+    "href": "portfolio/MonteCarlo/Monte_Carlo_Pt1.html#explicação-matemática",
+    "title": "O que é ?",
+    "section": "",
+    "text": "Considere o quadrado \\(Q\\) de vértices \\((-1, 1), (1,1), (1,-1)\\) e \\((-1,-1)\\) e considere também o círculo C de raio 1, circunscrito em Q.\nSeja A, o seguinte conjunto:\n\\[\n  A = \\{ (x,y) \\in \\mathbb{Q}; x^2 + y^2 \\leq 1 \\}\n\\]\nOu seja, o conjunto A é formado pelos pontos do quadrado Q que estão dentro da círculo C (\\(x² + y² ≤ 1\\)). Dessa forma, P(A) representa a probabilidade de sortear um número que esteja dentro do círculo.Logo,\n\\[\n  P(A) = \\frac{Área \\space de \\space C}{Área \\space de \\space Q} = \\frac{\\pi \\times 1^2}{2^2} = \\frac{\\pi}{4}\n\\]\ne, por consequência,\n\\[\n  \\pi = 4 \\times P(A)\n\\]\n\n\nPrimeiramente, geraremos dois conjuntos com 100.000 pontos aleatórios cada com nosso computador, esses dois conjuntos tem intervalos fechados que que vão de [-1,1] (o tamanho do intervalo é arbitrário, porém um intervalo menor precisará de menos pontos para conseguir uma estimativa de π boa) e atribuiremos ao primeiro conjunto uma variável x e ao segundo á uma variável y, que serão o par ordenado (x,y).\n\n\n\nCircle\n\n\n\n#Gera um vetor de tamanho #100000 com todos os #campos preenchidos #com um valor entre -1 e 1 \nx &lt;- runif(100000,-1,1) \ny &lt;- runif(100000,-1,1) \n\nApós isso, devemos ver quantos pontos caíram dentro do círculo C e quantos pontos caíram fora, tendo o número de pontos que caíram dentro é fácil determinar a probabilidade de ter caído dentro do círculo P(A), já é só dividirmos pelo total de pontos que foram sorteados (no caso, 100.000).\n\n# Circulo de centro na origem (0,0) de raio 1 \ncirculo &lt;- x^2 + y^2 &lt;= 1 \n# O vetor circulo detem valores TRUE se cairam dentro, e FALSE se \n# fora; \\# sum( circulo ) soma +1 nos indices TRUE e soma +0 \n# nos de valor FALSE \n\np &lt;- sum( circulo )/ 100000 \n\nComo temos, a P(A) na variavel p, e temos também a Área do quadrado Q, conseguimos o valor de Pi, como justificado matematicamente acima.\n\npiresultado &lt;- 4*p \n# piresultado = 3.13988 \nplot(x, y, type = \"n\") \n# Pontos que cairam dentro em laranja \npoints(x[ circulo ], y[ circulo ], col = \" orange \", pch = 20, cex = 0.5) \n# Pontos que cairam fora em azul \npoints(x[! circulo ], y[! circulo ], col = \" blue \", pch = 20, cex = 0.5)",
+    "crumbs": [
+      "Home",
+      "Estudo",
+      "O que é ?"
+    ]
+  },
+  {
+    "objectID": "portfolio/MonteCarlo/Monte_Carlo_Pt1.html#referências",
+    "href": "portfolio/MonteCarlo/Monte_Carlo_Pt1.html#referências",
+    "title": "O que é ?",
+    "section": "",
+    "text": "Código e explicação usados em aula do professor Pedro Franklin da UFU\nArtigo2008_MMC\nIntrodução aos Métodos de Monte Carlo Avançados-Adrian Hinojosa Luna\nMÉTODO MONTE CARLO E SUAS APLICAÇÕES-ADMILSON RODRIGUES DE CARVALHO\n\n\n\n\nCircle",
+    "crumbs": [
+      "Home",
+      "Estudo",
+      "O que é ?"
+    ]
+  },
+  {
+    "objectID": "portfolio/MonteCarlo/Monte_Carlo_Pt2.html",
+    "href": "portfolio/MonteCarlo/Monte_Carlo_Pt2.html",
     "title": "Monte Carlo Parte 2",
     "section": "",
-    "text": "Uma breve introdução ao Método de Monte Carlo #2 Agora, que conseguimos entender um pouco do porque ter sido criado e ter visto uma das implementações deste método, veremos também no que se baseia o este método. O que sustenta o Método de Monte Carlo ? Explicaremos isso, de uma forma simplicada, pois sua prova é complexa e grande, para tanto nos atrelaremos mais a ideia do “Por que” e menos do “Como”. O método de M.C é sustentando pelo teorema da Lei dos Grandes Números (L.G.N ), este teorema tem a seguinte proposta, repita um determinado experimento um número considerável de vezes, pegue o resultado de cada um e faça sua média aritmética, o resultado é o valor esperado(E[X]). Existem várias aplicações para a L.G.N, a mostrada por exemplo, no post do Pi é a de Bernoulli, onde somente há duas probabilidades de ser sim ou não. Conceito de Esperança (E[X]). Há esperança em probabilidade, tem como ideia de que algo no final ou no limite irá /tenderá para um determinado número, no nosso caso, uma probabilidade, por isso seu nome, sua notação é dita E[X]. Imagine que você em um dia com muito tempo começa a jogar uma moeda para cima, a cada lançamento, você conta qual foi o resultado e lança-a novamente. A ideia de esperança se torna fácil de entender neste caso, nas primeiras horas, o número de vezes que caíram cara ou coroa tendem a não ser 1/2 (0.5), ou seja, nas poucas horas que você jogou um número “n” pequeno de vezes, a probabilidade tende para algum lado da moeda. Mas, você, entendiado, continua a jogar a moeda e contar seu resultado, ao fazer isso por um dia inteiro, você verá que o número de vezes que caíram cara e coroa tendem “magicamente” para 1/2, ou seja, ao jogar um número de “n” de vezes muito grande a probabilidade se aproximou de 0.5. Explicação matemática Considere que , Logo, como é o jogar de moeda, temos que, Assim, pela esperança temos que no limite, Veja que interessante, o gráfico mostrando a plotagem dos valores se aproximando de 1/2, conforme o número de lançamentos aumenta. Figura 1Utilizando o código em R lancamentos &lt;- sample (x=c(0 ,1) , size =5000 , replace = TRUE ) #o comando acima lan\u0018ca a moeda 5000 vezes e guarda # este vetor de tamanho 5 mil na variavel lancamentos proporcao &lt;- cumsum ( lancamentos )/ 1:5000 #o comando acima calcula a m\u0013edia acumulada para cada # valor de n entre 1 e 5000 e guarda este vetor de #m\u0013e dias em proporcao #os comandos a seguir gerararam a Figura 1 plot (x = 1:5000 , y = proporcao ,type = “l”, xlab = “n\u0013u mero de lan\u0018c amentos”, ylab = ” propor \u0018c~ao de caras “) abline (h = c(0.5) , col =”red”) Agora, vejamos como isso ocorre em um dado, utilizando os conceitos de esperança. É legal, utilizarmos um dado por que ele se distancia da distribuição de Bernoulli, no qual se aplicar para valores binários, como um dado tem 6 faces, temos 6 possíveis ocorrências de mesma probabilidade cada, saímos das Distribuições de Bernoulli e entramos em Distribuições Uniformes. Suponha que outro dia de tédio tenha chegado, mas desta vez, curiosamente você ao invés de lançar uma moeda, você está agora lançando dados e outra vez você anota o número da face que caiu para cima. É intrigante pensar, o que teremos como a média de todas as jogadas no final do dia (Esperança) ? Resolução matemática Temos que, e que a probabilidade de cair alguma dessas faces em um dado não viciado, Portanto, na esperança, Veja, como fica a aproximação, Figura 2Utilizando o código em R res &lt;- c() for(i in 1:10000){ x &lt;- sample(c(1,2,3,4,5,6),1) res[i] &lt;- x } proporcao &lt;- cumsum ( res )/ 1:10000 #Plota Figura 2 plot (x = 1:10000 , y = proporcao ,type = “l”, ylab = “Media”, xlab = “Numero de Lancamentos”) abline (h = c(3.5) , col = “red”) Expansão: Uma vida inteira de lançamentos . Imagine agora, que ao invés de um dia entendiante, uma determinada pessoa faça isso por toda a sua vida, e no final de cada dia, depois de fazer todos os lançamentos do dia pega cada média final de cada dia e a escreve em um caderno, como seriam dadas as distribuição das médias de cada dia ? res &lt;- c() dist &lt;-c() #For representando os 1000 dias da sua vida for(j in 1:1000){ #10000 lancamentos sao feitos a cada dia for(i in 1:10000){ x &lt;- sample(c(1,2,3,4,5,6),1) res[i] &lt;- x } # ao final de cada dia anota no caderno “dist” dist[j] &lt;- mean(res) } hist(dist) Veja que interessante, No final de sua vida, a chance da média diaria de lancamentos ter sido de 3.5 é maior do por exemplo 3.56 ou 3.46, ou seja, em um vida inteira, a chance maior é de que a média dos lançamentos diários fiquem por volta de 3.49~3.51, e quase nunca em sua vida um lançamento diário ficou por volta de 3.56 ou 3.46. Referências. Códigos e aulas do professor Pedro Franklin da UFU\nCaso, venha a ter algum tipo de erro ou coesão,por favor enviar mensagem.\n\n\n\n Back to top"
+    "text": "Agora, que conseguimos entender um pouco do porque ter sido criado e ter visto uma das implementações deste método, veremos também no que se baseia o este método.\n\n\nExplicaremos isso, de uma forma simplicada, pois sua prova é complexa e grande, para tanto nos atrelaremos mais a ideia do “Por que” e menos do “Como”. O método de M.C é sustentando pelo teorema da Lei dos Grandes Números (L.G.N ), este teorema tem a seguinte proposta, repita um determinado experimento um número considerável de vezes, pegue o resultado de cada um e faça sua média aritmética, o resultado é o valor esperado(E[X]). Existem várias aplicações para a L.G.N, a mostrada por exemplo, no post do Pi é a de Bernoulli, onde somente há duas probabilidades de ser sim ou não.\n\n\n\nHá esperança em probabilidade, tem como ideia de que algo no final ou no limite irá /tenderá para um determinado número, no nosso caso, uma probabilidade, por isso seu nome, sua notação é dita E[X].\n\\[\n\\lim_{n\\to\\infty} \\frac{X_1+ X_2+X_3+...+ X_n}{n} = E[X]\n\\] Imagine que você em um dia com muito tempo começa a jogar uma moeda para cima, a cada lançamento, você conta qual foi o resultado e lança-a novamente. A ideia de esperança se torna fácil de entender neste caso, nas primeiras horas, o número de vezes que caíram cara ou coroa tendem a não ser 1/2 (0.5), ou seja, nas poucas horas que você jogou um número “n” pequeno de vezes, a probabilidade tende para algum lado da moeda. Mas, você, entendiado, continua a jogar a moeda e contar seu resultado, ao fazer isso por um dia inteiro, você verá que o número de vezes que caíram cara e coroa tendem “magicamente” para 1/2, ou seja, ao jogar um número de “n” de vezes muito grande a probabilidade se aproximou de 0.5.\n\n\n\nConsidere que,\n\\[\nX_i  = \\begin{cases} 1,se \\space o \\space  resultado \\space  se \\space for \\space  cara;\\\\\n                      0,se \\space   o  \\space resultado \\space se \\space  for  \\space  cara;\n        \\end{cases}\n\\]\nLogo, como é o jogar de moeda, temos que,\n\\[\nP(X_i = 1) = \\frac{1}{2} \\space e \\space P(X_i = 0) = 1 - \\frac{1}{2} = \\frac{1}{2}\n\\]\nAssim, pela esperança temos que no limite, \\[\nE(X) = 0.P(X=0) + 1.P(X=1) = 1.\\frac{1}{2} = \\frac{1}{2}\n\\]\nUtilizando o código em R com essa lógica geramos o gráfico a seguir, e veja que interessante, o gráfico mostrando a plotagem dos valores se aproximando de \\(\\frac{1}{2}\\), conforme o número de lançamentos aumenta.\n\n\n\n\n\n\n\n\n\nAgora, vejamos como isso ocorre em um dado, utilizando os conceitos de esperança. É legal, utilizarmos um dado por que ele se distancia da distribuição de Bernoulli, no qual se aplicar para valores binários, como um dado tem 6 faces, temos 6 possíveis ocorrências de mesma probabilidade cada, saímos das Distribuições de Bernoulli e entramos em Distribuições Uniformes.\nSuponha que outro dia de tédio tenha chegado, mas desta vez, curiosamente você ao invés de lançar uma moeda, você está agora lançando dados e outra vez você anota o número da face que caiu para cima. É intrigante pensar, o que teremos como a média de todas as jogadas no final do dia (Esperança)?\n\n\n\nTemos que, \\[\nX_i \\in [1,2,..,6]\n\\]\ne que a probabilidade de cair alguma dessas faces em um dado não viciado,\n\\[\nP(X_1 = 1)= \\frac{1}{6} \\\\\nP(X_2 = 2)= \\frac{1}{6} \\\\\n...\\\\\nP(X_6 = 6)= \\frac{1}{6} \\\\\n\\] Portanto, na esperança,\n\\[\nE[X] = \\frac{1*P(X_1=1)+2*P(X_2=2)+...+6*P(X_6=6)}{6}\\\\\nE[X] = \\frac{\\frac{1}{6} +\\frac{2}{6} +...+ \\frac{6}{6} + }{6}\\\\\n\\] ## Utilizando o código em R\nVeja, como fica a aproximação,\n\n\n\n\n\n\n\n\n\n\n\n\nImagine agora, que ao invés de um dia entendiante, uma determinada pessoa faça isso por toda a sua vida, e no final de cada dia, depois de fazer todos os lançamentos do dia pega cada média final de cada dia e a escreve em um caderno, como seriam dadas as distribuição das médias de cada dia?\n\n\n\n\n\n\n\n\n\nVeja que interessante,\nNo final de sua vida, a chance da média diaria de lancamentos ter sido de 3.5 é maior do por exemplo 3.56 ou 3.46, ou seja, em um vida inteira, a chance maior é de que a média dos lançamentos diários fiquem por volta de 3.49~3.51, e quase nunca em sua vida um lançamento diário ficou por volta de 3.56 ou 3.46.\n\n\n\n\nCódigo e explicação usados em aula do professor Pedro Franklin da UFU",
+    "crumbs": [
+      "Home",
+      "Estudo",
+      "Uma vida inteira..."
+    ]
   },
   {
-    "objectID": "portfolio/Monte_Carlo_Pt1.html#utilizando-o-código-em-r",
-    "href": "portfolio/Monte_Carlo_Pt1.html#utilizando-o-código-em-r",
-    "title": "Monte Carlo",
+    "objectID": "portfolio/MonteCarlo/Monte_Carlo_Pt2.html#o-que-sustenta-o-método-de-monte-carlo",
+    "href": "portfolio/MonteCarlo/Monte_Carlo_Pt2.html#o-que-sustenta-o-método-de-monte-carlo",
+    "title": "Monte Carlo Parte 2",
     "section": "",
-    "text": "Primeiramente, geraremos dois conjuntos com 100.000 pontos aleatórios cada com nosso computador, esses dois conjuntos tem intervalos fechados que que vão de [-1,1] (o tamanho do intervalo é arbitrário, porém um intervalo menor precisará de menos pontos para conseguir uma estimativa de π boa) e atribuiremos ao primeiro conjunto uma variável x e ao segundo á uma variável y, que serão o par ordenado (x,y).\n\n\n\nElephant\n\n\n\n#Gera um vetor de tamanho #100000 com todos os #campos preenchidos #com um valor entre -1 e 1 \nx &lt;- runif(100000,-1,1) \ny &lt;- runif(100000,-1,1) \n\nApós isso, devemos ver quantos pontos caíram dentro do círculo C e quantos pontos caíram fora, tendo o número de pontos que caíram dentro é fácil determinar a probabilidade de ter caído dentro do círculo P(A), já é só dividirmos pelo total de pontos que foram sorteados (no caso, 100.000).\n\n# Circulo de centro na origem (0,0) de raio 1 \ncirculo &lt;- x^2 + y^2 &lt;= 1 \n# O vetor circulo detem valores TRUE se cairam dentro, e FALSE se \n# fora; \\# sum( circulo ) soma +1 nos indices TRUE e soma +0 \n# nos de valor FALSE \n\np &lt;- sum( circulo )/ 100000 \n\nComo temos, a P(A) na variavel p, e temos também a Área do quadrado Q, conseguimos o valor de Pi, como justificado matematicamente acima. piresultado &lt;- 4*p # piresultado = 3.13988 Veja como fica o plot dos valores do vetor booelano circulo, plot (x, y, type = “n”) # Pontos que cairam dentro em laranja points (x[ circulo ], y[ circulo ], col = ” orange “, pch = 20, cex = 0.5) # Pontos que cairam fora em azul points (x[! circulo ], y[! circulo ], col =” blue “, pch = 20, cex = 0.5) Referências: Código e explicação usados em aula do professor Pedro Franklin da UFU Artigo2008_MMC Introdução aos Métodos de Monte Carlo Avançados - Adrian Hinojosa Luna MÉTODO MONTE CARLO E SUAS APLICAÇÕES - ADMILSON RODRIGUES DE CARVALHO\n\n1+2\n\n[1] 3"
+    "text": "Explicaremos isso, de uma forma simplicada, pois sua prova é complexa e grande, para tanto nos atrelaremos mais a ideia do “Por que” e menos do “Como”. O método de M.C é sustentando pelo teorema da Lei dos Grandes Números (L.G.N ), este teorema tem a seguinte proposta, repita um determinado experimento um número considerável de vezes, pegue o resultado de cada um e faça sua média aritmética, o resultado é o valor esperado(E[X]). Existem várias aplicações para a L.G.N, a mostrada por exemplo, no post do Pi é a de Bernoulli, onde somente há duas probabilidades de ser sim ou não.",
+    "crumbs": [
+      "Home",
+      "Estudo",
+      "Uma vida inteira..."
+    ]
   },
   {
-    "objectID": "portfolio/Monte_Carlo_Pt1.html#explicação-matemática",
-    "href": "portfolio/Monte_Carlo_Pt1.html#explicação-matemática",
-    "title": "Monte Carlo",
+    "objectID": "portfolio/MonteCarlo/Monte_Carlo_Pt2.html#conceito-de-esperança-ex.",
+    "href": "portfolio/MonteCarlo/Monte_Carlo_Pt2.html#conceito-de-esperança-ex.",
+    "title": "Monte Carlo Parte 2",
     "section": "",
-    "text": "Considere o quadrado \\(Q\\) de vértices \\((-1, 1), (1,1), (1,-1)\\) e \\((-1,-1)\\) e considere também o círculo C de raio 1, circunscrito em Q.\nSeja A, o seguinte conjunto:\n\\[\n  A = \\{ (x,y) \\in \\mathbb{Q}; x^2 + y^2 \\leq 1 \\}\n\\]\nOu seja, o conjunto A é formado pelos pontos do quadrado Q que estão dentro da círculo C (\\(x² + y² ≤ 1\\)). Dessa forma, P(A) representa a probabilidade de sortear um número que esteja dentro do círculo.Logo,\n\\[\n  P(A) = \\frac{Área \\space de \\space C}{Área \\space de \\space Q} = \\frac{\\pi \\times 1^2}{2^2} = \\frac{\\pi}{4}\n\\]\ne, por consequência,\n\\[\n  \\pi = 4 \\times P(A)\n\\]\n\n\nPrimeiramente, geraremos dois conjuntos com 100.000 pontos aleatórios cada com nosso computador, esses dois conjuntos tem intervalos fechados que que vão de [-1,1] (o tamanho do intervalo é arbitrário, porém um intervalo menor precisará de menos pontos para conseguir uma estimativa de π boa) e atribuiremos ao primeiro conjunto uma variável x e ao segundo á uma variável y, que serão o par ordenado (x,y).\n\n\n\nElephant\n\n\n\n#Gera um vetor de tamanho #100000 com todos os #campos preenchidos #com um valor entre -1 e 1 \nx &lt;- runif(100000,-1,1) \ny &lt;- runif(100000,-1,1) \n\nApós isso, devemos ver quantos pontos caíram dentro do círculo C e quantos pontos caíram fora, tendo o número de pontos que caíram dentro é fácil determinar a probabilidade de ter caído dentro do círculo P(A), já é só dividirmos pelo total de pontos que foram sorteados (no caso, 100.000).\n\n# Circulo de centro na origem (0,0) de raio 1 \ncirculo &lt;- x^2 + y^2 &lt;= 1 \n# O vetor circulo detem valores TRUE se cairam dentro, e FALSE se \n# fora; \\# sum( circulo ) soma +1 nos indices TRUE e soma +0 \n# nos de valor FALSE \n\np &lt;- sum( circulo )/ 100000 \n\nComo temos, a P(A) na variavel p, e temos também a Área do quadrado Q, conseguimos o valor de Pi, como justificado matematicamente acima.\n\npiresultado &lt;- 4*p \n# piresultado = 3.13988 \nplot(x, y, type = \"n\") \n# Pontos que cairam dentro em laranja \npoints(x[ circulo ], y[ circulo ], col = \" orange \", pch = 20, cex = 0.5) \n# Pontos que cairam fora em azul \npoints(x[! circulo ], y[! circulo ], col = \" blue \", pch = 20, cex = 0.5)"
+    "text": "Há esperança em probabilidade, tem como ideia de que algo no final ou no limite irá /tenderá para um determinado número, no nosso caso, uma probabilidade, por isso seu nome, sua notação é dita E[X].\n\\[\n\\lim_{n\\to\\infty} \\frac{X_1+ X_2+X_3+...+ X_n}{n} = E[X]\n\\] Imagine que você em um dia com muito tempo começa a jogar uma moeda para cima, a cada lançamento, você conta qual foi o resultado e lança-a novamente. A ideia de esperança se torna fácil de entender neste caso, nas primeiras horas, o número de vezes que caíram cara ou coroa tendem a não ser 1/2 (0.5), ou seja, nas poucas horas que você jogou um número “n” pequeno de vezes, a probabilidade tende para algum lado da moeda. Mas, você, entendiado, continua a jogar a moeda e contar seu resultado, ao fazer isso por um dia inteiro, você verá que o número de vezes que caíram cara e coroa tendem “magicamente” para 1/2, ou seja, ao jogar um número de “n” de vezes muito grande a probabilidade se aproximou de 0.5.",
+    "crumbs": [
+      "Home",
+      "Estudo",
+      "Uma vida inteira..."
+    ]
   },
   {
-    "objectID": "portfolio/Monte_Carlo_Pt1.html#qual-a-finalidade-do-método-de-monte-carlo",
-    "href": "portfolio/Monte_Carlo_Pt1.html#qual-a-finalidade-do-método-de-monte-carlo",
-    "title": "Monte Carlo",
+    "objectID": "portfolio/MonteCarlo/Monte_Carlo_Pt2.html#explicação-matemática",
+    "href": "portfolio/MonteCarlo/Monte_Carlo_Pt2.html#explicação-matemática",
+    "title": "Monte Carlo Parte 2",
     "section": "",
-    "text": "Um dos intuitos em se criar esse método é ser uma ferramenta mais fácil para conseguir atingir certos objetivos, a matemática dividi-se em pura e aplicada, a pura com muito rigor metodológico e cálculos complexos e a aplicada baseando-se mais em métodos experimentais para chegar aos resultados de problemas aplicados ao dia a dia. O método de M.C por sua vez, busca juntar as melhores partes da matemática pura com as da parte aplicada, trocando as partes fracas que compõe a matemática pura como a alta complexidade das equações por meios mais fáceis como os métodos experimentais da aplicada. Em resumo, esta ferramenta usa de variáveis aleatórias e um grande número de experimentos, que por sua vez sustentandas pela L.G.N (Lei dos Grandes Números) resulta em um resultado aproximado do problema."
+    "text": "Considere que,\n\\[\nX_i  = \\begin{cases} 1,se \\space o \\space  resultado \\space  se \\space for \\space  cara;\\\\\n                      0,se \\space   o  \\space resultado \\space se \\space  for  \\space  cara;\n        \\end{cases}\n\\]\nLogo, como é o jogar de moeda, temos que,\n\\[\nP(X_i = 1) = \\frac{1}{2} \\space e \\space P(X_i = 0) = 1 - \\frac{1}{2} = \\frac{1}{2}\n\\]\nAssim, pela esperança temos que no limite, \\[\nE(X) = 0.P(X=0) + 1.P(X=1) = 1.\\frac{1}{2} = \\frac{1}{2}\n\\]\nUtilizando o código em R com essa lógica geramos o gráfico a seguir, e veja que interessante, o gráfico mostrando a plotagem dos valores se aproximando de \\(\\frac{1}{2}\\), conforme o número de lançamentos aumenta.\n\n\n\n\n\n\n\n\n\nAgora, vejamos como isso ocorre em um dado, utilizando os conceitos de esperança. É legal, utilizarmos um dado por que ele se distancia da distribuição de Bernoulli, no qual se aplicar para valores binários, como um dado tem 6 faces, temos 6 possíveis ocorrências de mesma probabilidade cada, saímos das Distribuições de Bernoulli e entramos em Distribuições Uniformes.\nSuponha que outro dia de tédio tenha chegado, mas desta vez, curiosamente você ao invés de lançar uma moeda, você está agora lançando dados e outra vez você anota o número da face que caiu para cima. É intrigante pensar, o que teremos como a média de todas as jogadas no final do dia (Esperança)?",
+    "crumbs": [
+      "Home",
+      "Estudo",
+      "Uma vida inteira..."
+    ]
   },
   {
-    "objectID": "portfolio/Monte_Carlo_Pt1.html#estimando-piπ-por-meio-de-variáveis-aleatórias-por-m.c",
-    "href": "portfolio/Monte_Carlo_Pt1.html#estimando-piπ-por-meio-de-variáveis-aleatórias-por-m.c",
-    "title": "Monte Carlo",
+    "objectID": "portfolio/MonteCarlo/Monte_Carlo_Pt2.html#resolução-matemática",
+    "href": "portfolio/MonteCarlo/Monte_Carlo_Pt2.html#resolução-matemática",
+    "title": "Monte Carlo Parte 2",
     "section": "",
-    "text": "Imagine que, você começa a fazer uma prova de matemática e uma determinada questão te pede o valor Pi (π) e você somente pode usar um computador que gerará valores aleatórios em um determinado intervalo, como fazer?\nA princípio essa pergunta é maluca, porém sua resolução é elegante e curiosa. Mostraremos primeiramente a ideia matemática e após isso o código por meio da linguagem R mostrando sua resolução."
+    "text": "Temos que, \\[\nX_i \\in [1,2,..,6]\n\\]\ne que a probabilidade de cair alguma dessas faces em um dado não viciado,\n\\[\nP(X_1 = 1)= \\frac{1}{6} \\\\\nP(X_2 = 2)= \\frac{1}{6} \\\\\n...\\\\\nP(X_6 = 6)= \\frac{1}{6} \\\\\n\\] Portanto, na esperança,\n\\[\nE[X] = \\frac{1*P(X_1=1)+2*P(X_2=2)+...+6*P(X_6=6)}{6}\\\\\nE[X] = \\frac{\\frac{1}{6} +\\frac{2}{6} +...+ \\frac{6}{6} + }{6}\\\\\n\\] ## Utilizando o código em R\nVeja, como fica a aproximação,",
+    "crumbs": [
+      "Home",
+      "Estudo",
+      "Uma vida inteira..."
+    ]
   },
   {
-    "objectID": "portfolio/Monte_Carlo_Pt1.html#referências",
-    "href": "portfolio/Monte_Carlo_Pt1.html#referências",
+    "objectID": "portfolio/MonteCarlo/Monte_Carlo_Pt2.html#expansão-uma-vida-inteira-de-lançamentos.",
+    "href": "portfolio/MonteCarlo/Monte_Carlo_Pt2.html#expansão-uma-vida-inteira-de-lançamentos.",
+    "title": "Monte Carlo Parte 2",
+    "section": "",
+    "text": "Imagine agora, que ao invés de um dia entendiante, uma determinada pessoa faça isso por toda a sua vida, e no final de cada dia, depois de fazer todos os lançamentos do dia pega cada média final de cada dia e a escreve em um caderno, como seriam dadas as distribuição das médias de cada dia?\n\n\n\n\n\n\n\n\n\nVeja que interessante,\nNo final de sua vida, a chance da média diaria de lancamentos ter sido de 3.5 é maior do por exemplo 3.56 ou 3.46, ou seja, em um vida inteira, a chance maior é de que a média dos lançamentos diários fiquem por volta de 3.49~3.51, e quase nunca em sua vida um lançamento diário ficou por volta de 3.56 ou 3.46.",
+    "crumbs": [
+      "Home",
+      "Estudo",
+      "Uma vida inteira..."
+    ]
+  },
+  {
+    "objectID": "portfolio/MonteCarlo/Monte_Carlo_Pt2.html#referências",
+    "href": "portfolio/MonteCarlo/Monte_Carlo_Pt2.html#referências",
+    "title": "Monte Carlo Parte 2",
+    "section": "",
+    "text": "Código e explicação usados em aula do professor Pedro Franklin da UFU",
+    "crumbs": [
+      "Home",
+      "Estudo",
+      "Uma vida inteira..."
+    ]
+  },
+  {
+    "objectID": "portfolio/MonteCarlo/index.html",
+    "href": "portfolio/MonteCarlo/index.html",
     "title": "Monte Carlo",
     "section": "",
-    "text": "Código e explicação usados em aula do professor Pedro Franklin da UFU\nArtigo2008_MMC\nIntrodução aos Métodos de Monte Carlo Avançados-Adrian Hinojosa Luna\nMÉTODO MONTE CARLO E SUAS APLICAÇÕES-ADMILSON RODRIGUES DE CARVALHO"
+    "text": "O objetivo deste projeto é falar sobre um algoritmo estatístico como o Monte Carlo. A ferramenta será desenvolvida utilizando a linguagem de programação R e alguns pacotes para o estruturamento das bases de dados e a construção do dashboard interativo.",
+    "crumbs": [
+      "Home",
+      "Monte Carlo"
+    ]
+  },
+  {
+    "objectID": "portfolio/MonteCarlo/index.html#explicação-do-projeto",
+    "href": "portfolio/MonteCarlo/index.html#explicação-do-projeto",
+    "title": "Monte Carlo",
+    "section": "",
+    "text": "O objetivo deste projeto é falar sobre um algoritmo estatístico como o Monte Carlo. A ferramenta será desenvolvida utilizando a linguagem de programação R e alguns pacotes para o estruturamento das bases de dados e a construção do dashboard interativo.",
+    "crumbs": [
+      "Home",
+      "Monte Carlo"
+    ]
+  },
+  {
+    "objectID": "portfolio/MonteCarlo/index.html#pacotes",
+    "href": "portfolio/MonteCarlo/index.html#pacotes",
+    "title": "Monte Carlo",
+    "section": "Pacotes",
+    "text": "Pacotes\nTidyverse, fornece ferramentas para manipulação, visualização e análise de dados de maneira consistente e eficiente.\nPlotly, para criação de gráficos interativos e visualizações de dados.\nShiny, para a criação de aplicativos web interativos, permitindo a construção de interfaces dinâmicas e reativas para análise de dados.\nShinyDashboard, extensão do pacote Shiny que simplifica a criação de dashboards interativos.\nPara instalar e carregar essas bibliotecas, utilize o código abaixo:\n\ninstall.packages(c(\"tidyverse\",\"plotly\",\"shiny\",\"shinydashboard\"))\n\nlibrary(tidyverse)\nlibrary(plotly)\nlibrary(shiny)\nlibrary(shinydashboard)",
+    "crumbs": [
+      "Home",
+      "Monte Carlo"
+    ]
+  },
+  {
+    "objectID": "portfolio/MonteCarlo/index.html#dados",
+    "href": "portfolio/MonteCarlo/index.html#dados",
+    "title": "Monte Carlo",
+    "section": "Dados",
+    "text": "Dados\nOs dados referentes aos mundiais de 2011 a 2022 foram obtidos no Kaggle.\nO conjunto de dados consiste em três arquivos CSV, cada um fornecendo informações específicas:\n\nUm arquivo que detalha o desempenho dos jogadores em cada partida, incluindo estatísticas individuais.\nUm arquivo que apresenta os personagens utilizados durante os campeonatos, acompanhado de suas estatísticas relevantes.\nUm arquivo que fornece informações sobre cada partida, incluindo detalhes dos jogadores e os vencedores de cada confronto.\n\n\n\n\nUm dos dashboards que construi nessa análise",
+    "crumbs": [
+      "Home",
+      "Monte Carlo"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Paulo Oyama",
+    "section": "",
+    "text": "Experiência em linguagens de programação (R, Python, SQL);\nFerramentas de análise de dados (pyspark, pandas, scikit);\nExperiência em ferramentas de controle de versão (GitHub, BitBucket, Jenkins);\nServiços da AWS como Athena, Glue, S3, CloudFormation, CloudWatch, EC2, Lambda;\nExperiência em Banco de Dados SQL (Oracle, MySQL);\nInglês avançado (escrita e leitura)."
+  },
+  {
+    "objectID": "index.html#competências",
+    "href": "index.html#competências",
+    "title": "Paulo Oyama",
+    "section": "",
+    "text": "Experiência em linguagens de programação (R, Python, SQL);\nFerramentas de análise de dados (pyspark, pandas, scikit);\nExperiência em ferramentas de controle de versão (GitHub, BitBucket, Jenkins);\nServiços da AWS como Athena, Glue, S3, CloudFormation, CloudWatch, EC2, Lambda;\nExperiência em Banco de Dados SQL (Oracle, MySQL);\nInglês avançado (escrita e leitura)."
+  },
+  {
+    "objectID": "index.html#experiência",
+    "href": "index.html#experiência",
+    "title": "Paulo Oyama",
+    "section": "EXPERIÊNCIA",
+    "text": "EXPERIÊNCIA\n\nCientista de Dados na Algar Telecom, Uberlândia\nSetembro de 2022 - Atualmente\n\nConstrução, gerenciamento e manutenção de Workflows no Glue e StepFunction;\nConstrução, gerenciamento e manutenção de stacks no CloudFormation;\nCriação de scripts em Python para automatização de dados usando pyspark;\nCI/CD com Jenkins;\nCriação de dashboards para visualização dos dados.\n\n\n\nDesenvolvedor de Software na BKPi, Uberlândia\nDezembro de 2021 - Junho de 2022\n\nGerenciamento de estados;\nIntegração com banco de dados no Firebase."
+  },
+  {
+    "objectID": "index.html#escolaridade",
+    "href": "index.html#escolaridade",
+    "title": "Paulo Oyama",
+    "section": "ESCOLARIDADE",
+    "text": "ESCOLARIDADE\n\nMestrado em Inteligência Artificial\nAgosto de 2024 - Até 2026\n\nUniversidade Federal de Uberlândia (UFU), Uberlândia\n\n\n\nEnsino Superior Completo\nDe 2019 - Março de 2024\n\nUniversidade Federal de Uberlândia (UFU), Uberlândia\nTrabalho de conclusão de curso em Sistemas de Recomendação Baseado em Metadados;\n3 anos participando do Programa de Educação Tutorial (PET);\nProjeto de iniciação científica concluído com tema em abafamento de ruídos por meio de redes neurais com certificado."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n De volta ao topo"
   }
 ]

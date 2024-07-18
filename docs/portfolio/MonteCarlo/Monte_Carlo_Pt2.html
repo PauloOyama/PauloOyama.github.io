@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Paulo Oyama">
 
-<title>Paulo Oyama - Monte Carlo Parte 2</title>
+<title>Paulo Oyama - Uma vida inteira…</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +24,28 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../portfolio/MonteCarlo/Monte_Carlo_Pt1.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -55,51 +60,81 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
-<body class="nav-sidebar floating nav-fixed fullcontent">
+<body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Paulo Oyama</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Procurar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Alternar de navegação" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../projects.html" aria-current="page"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Portfolio</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+          <div class="quarto-navbar-tools tools-wide">
+    <a href="mailto:papaloyama@gmail.com@gmail.com" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-envelope"></i></a>
     <div class="dropdown">
       <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label=""><i class="bi bi-github"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
@@ -115,21 +150,18 @@ ul.task-list li input[type="checkbox"] {
           </li>
       </ul>
     </div>
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo escuro"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Monte Carlo Parte 2</li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../portfolio/MonteCarlo/Monte_Carlo_Pt1.html">Estudo</a></li><li class="breadcrumb-item"><a href="../../portfolio/MonteCarlo/Monte_Carlo_Pt2.html">Uma vida inteira…</a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
     </div>
   </nav>
 </header>
@@ -137,42 +169,35 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../portfolio/MonteCarlo/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Monte Carlo</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">Portfolio</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+ <span class="menu-text">Estudo</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Alternar seção">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../projects.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Portfolio</span></a>
+  <a href="../../portfolio/MonteCarlo/Monte_Carlo_Pt1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">O que é ?</span></a>
   </div>
 </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
- <span class="menu-text">Monte Carlo</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
- <span class="menu-text">Monte_Carlo_Pt1.qmd</span>
-  </li>
-      </ul>
-  </li>
+  <div class="sidebar-item-container"> 
+  <a href="../../portfolio/MonteCarlo/Monte_Carlo_Pt2.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Uma vida inteira…</span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -180,11 +205,27 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#uma-breve-introdução-ao-método-de-monte-carlo-2" id="toc-uma-breve-introdução-ao-método-de-monte-carlo-2" class="nav-link active" data-scroll-target="#uma-breve-introdução-ao-método-de-monte-carlo-2">Uma breve introdução ao Método de Monte Carlo #2</a>
+  <ul class="collapse">
+  <li><a href="#o-que-sustenta-o-método-de-monte-carlo" id="toc-o-que-sustenta-o-método-de-monte-carlo" class="nav-link" data-scroll-target="#o-que-sustenta-o-método-de-monte-carlo">O que sustenta o Método de Monte Carlo?</a></li>
+  <li><a href="#conceito-de-esperança-ex." id="toc-conceito-de-esperança-ex." class="nav-link" data-scroll-target="#conceito-de-esperança-ex.">Conceito de Esperança (E[X]).</a></li>
+  <li><a href="#explicação-matemática" id="toc-explicação-matemática" class="nav-link" data-scroll-target="#explicação-matemática">Explicação matemática</a></li>
+  <li><a href="#resolução-matemática" id="toc-resolução-matemática" class="nav-link" data-scroll-target="#resolução-matemática">Resolução matemática</a></li>
+  <li><a href="#expansão-uma-vida-inteira-de-lançamentos." id="toc-expansão-uma-vida-inteira-de-lançamentos." class="nav-link" data-scroll-target="#expansão-uma-vida-inteira-de-lançamentos.">Expansão: Uma vida inteira de lançamentos.</a></li>
+  <li><a href="#referências" id="toc-referências" class="nav-link" data-scroll-target="#referências">Referências:</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../portfolio/MonteCarlo/Monte_Carlo_Pt1.html">Estudo</a></li><li class="breadcrumb-item"><a href="../../portfolio/MonteCarlo/Monte_Carlo_Pt2.html">Uma vida inteira…</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Monte Carlo Parte 2</h1>
 </div>
@@ -193,7 +234,19 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Autor</div>
+    <div class="quarto-title-meta-contents">
+             <p>Paulo Oyama </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Data de Publicação</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">24 de junho de 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -203,12 +256,101 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Uma breve introdução ao Método de Monte Carlo&nbsp;#2 Agora, que conseguimos entender um pouco do porque ter sido criado e ter visto uma das implementações deste método, veremos também no que se baseia o este método. O que sustenta o Método de Monte Carlo&nbsp;? Explicaremos isso, de uma forma simplicada, pois sua prova é complexa e grande, para tanto nos atrelaremos mais a ideia do “Por que” e menos do “Como”. O método de M.C é sustentando pelo teorema da Lei dos Grandes Números (L.G.N ), este teorema tem a seguinte proposta, repita um determinado experimento um número considerável de vezes, pegue o resultado de cada um e faça sua média aritmética, o resultado é o valor esperado(E[X]). Existem várias aplicações para a L.G.N, a mostrada por exemplo, no post do Pi é a de Bernoulli, onde somente há duas probabilidades de ser sim ou não. Conceito de Esperança (E[X]). Há esperança em probabilidade, tem como ideia de que algo no final ou no limite irá /tenderá para um determinado número, no nosso caso, uma probabilidade, por isso seu nome, sua notação é dita E[X]. Imagine que você em um dia com muito tempo começa a jogar uma moeda para cima, a cada lançamento, você conta qual foi o resultado e lança-a novamente. A ideia de esperança se torna fácil de entender neste caso, nas primeiras horas, o número de vezes que caíram cara ou coroa tendem a não ser 1/2 (0.5), ou seja, nas poucas horas que você jogou um número “n” pequeno de vezes, a probabilidade tende para algum lado da moeda. Mas, você, entendiado, continua a jogar a moeda e contar seu resultado, ao fazer isso por um dia inteiro, você verá que o número de vezes que caíram cara e coroa tendem “magicamente” para 1/2, ou seja, ao jogar um número de “n” de vezes muito grande a probabilidade se aproximou de 0.5. Explicação matemática Considere que&nbsp;, Logo, como é o jogar de moeda, temos que, Assim, pela esperança temos que no limite, Veja que interessante, o gráfico mostrando a plotagem dos valores se aproximando de 1/2, conforme o número de lançamentos aumenta. Figura 1Utilizando o código em&nbsp;R lancamentos &lt;- sample (x=c(0 ,1) , size =5000 , replace = TRUE ) #o comando acima lanca a moeda 5000 vezes e guarda # este vetor de tamanho 5 mil na variavel lancamentos proporcao &lt;- cumsum ( lancamentos )/ 1:5000 #o comando acima calcula a media acumulada para cada # valor de n entre 1 e 5000 e guarda este vetor de #me dias em proporcao #os comandos a seguir gerararam a Figura 1 plot (x = 1:5000 , y = proporcao ,type = “l”, xlab = “nu mero de lanc amentos”, ylab = ” propor c~ao de caras “) abline (h = c(0.5) , col =”red”) Agora, vejamos como isso ocorre em um dado, utilizando os conceitos de esperança. É legal, utilizarmos um dado por que ele se distancia da distribuição de Bernoulli, no qual se aplicar para valores binários, como um dado tem 6 faces, temos 6 possíveis ocorrências de mesma probabilidade cada, saímos das Distribuições de Bernoulli e entramos em Distribuições Uniformes. Suponha que outro dia de tédio tenha chegado, mas desta vez, curiosamente você ao invés de lançar uma moeda, você está agora lançando dados e outra vez você anota o número da face que caiu para cima. É intrigante pensar, o que teremos como a média de todas as jogadas no final do dia (Esperança)&nbsp;? Resolução matemática Temos que, e que a probabilidade de cair alguma dessas faces em um dado não viciado, Portanto, na esperança, Veja, como fica a aproximação, Figura 2Utilizando o código em&nbsp;R res &lt;- c() for(i in 1:10000){ x &lt;- sample(c(1,2,3,4,5,6),1) res[i] &lt;- x } proporcao &lt;- cumsum ( res )/ 1:10000 #Plota Figura 2 plot (x = 1:10000 , y = proporcao ,type = “l”, ylab = “Media”, xlab = “Numero de Lancamentos”) abline (h = c(3.5) , col = “red”) Expansão: Uma vida inteira de lançamentos&nbsp;. Imagine agora, que ao invés de um dia entendiante, uma determinada pessoa faça isso por toda a sua vida, e no final de cada dia, depois de fazer todos os lançamentos do dia pega cada média final de cada dia e a escreve em um caderno, como seriam dadas as distribuição das médias de cada dia&nbsp;? res &lt;- c() dist &lt;-c() #For representando os 1000 dias da sua vida for(j in 1:1000){ #10000 lancamentos sao feitos a cada dia for(i in 1:10000){ x &lt;- sample(c(1,2,3,4,5,6),1) res[i] &lt;- x } # ao final de cada dia anota no caderno “dist” dist[j] &lt;- mean(res) } hist(dist) Veja que interessante, No final de sua vida, a chance da média diaria de lancamentos ter sido de 3.5 é maior do por exemplo 3.56 ou 3.46, ou seja, em um vida inteira, a chance maior é de que a média dos lançamentos diários fiquem por volta de 3.49~3.51, e quase nunca em sua vida um lançamento diário ficou por volta de 3.56 ou 3.46. Referências. Códigos e aulas do professor Pedro Franklin da UFU</p>
-<p>Caso, venha a ter algum tipo de erro ou coesão,por favor enviar mensagem.</p>
+<section id="uma-breve-introdução-ao-método-de-monte-carlo-2" class="level1">
+<h1>Uma breve introdução ao Método de Monte Carlo #2</h1>
+<p>Agora, que conseguimos entender um pouco do porque ter sido criado e ter visto uma das implementações deste método, veremos também no que se baseia o este método.</p>
+<section id="o-que-sustenta-o-método-de-monte-carlo" class="level2">
+<h2 class="anchored" data-anchor-id="o-que-sustenta-o-método-de-monte-carlo">O que sustenta o Método de Monte Carlo?</h2>
+<p>Explicaremos isso, de uma forma simplicada, pois sua prova é complexa e grande, para tanto nos atrelaremos mais a ideia do “Por que” e menos do “Como”. O método de M.C é sustentando pelo teorema da Lei dos Grandes Números (L.G.N ), este teorema tem a seguinte proposta, repita um determinado experimento um número considerável de vezes, pegue o resultado de cada um e faça sua média aritmética, o resultado é o valor esperado(E[X]). Existem várias aplicações para a L.G.N, a mostrada por exemplo, no post do Pi é a de Bernoulli, onde somente há duas probabilidades de ser sim ou não.</p>
+</section>
+<section id="conceito-de-esperança-ex." class="level2">
+<h2 class="anchored" data-anchor-id="conceito-de-esperança-ex.">Conceito de Esperança (E[X]).</h2>
+<p>Há esperança em probabilidade, tem como ideia de que algo no final ou no limite irá /tenderá para um determinado número, no nosso caso, uma probabilidade, por isso seu nome, sua notação é dita E[X].</p>
+<p><span class="math display">\[
+\lim_{n\to\infty} \frac{X_1+ X_2+X_3+...+ X_n}{n} = E[X]
+\]</span> Imagine que você em um dia com muito tempo começa a jogar uma moeda para cima, a cada lançamento, você conta qual foi o resultado e lança-a novamente. A ideia de esperança se torna fácil de entender neste caso, nas primeiras horas, o número de vezes que caíram cara ou coroa tendem a não ser 1/2 (0.5), ou seja, nas poucas horas que você jogou um número “n” pequeno de vezes, a probabilidade tende para algum lado da moeda. Mas, você, entendiado, continua a jogar a moeda e contar seu resultado, ao fazer isso por um dia inteiro, você verá que o número de vezes que caíram cara e coroa tendem “magicamente” para 1/2, ou seja, ao jogar um número de “n” de vezes muito grande a probabilidade se aproximou de 0.5.</p>
+</section>
+<section id="explicação-matemática" class="level2">
+<h2 class="anchored" data-anchor-id="explicação-matemática">Explicação matemática</h2>
+<p>Considere que,</p>
+<p><span class="math display">\[
+X_i  = \begin{cases} 1,se \space o \space  resultado \space  se \space for \space  cara;\\
+                      0,se \space   o  \space resultado \space se \space  for  \space  cara;
+        \end{cases}
+\]</span></p>
+<p>Logo, como é o jogar de moeda, temos que,</p>
+<p><span class="math display">\[
+P(X_i = 1) = \frac{1}{2} \space e \space P(X_i = 0) = 1 - \frac{1}{2} = \frac{1}{2}
+\]</span></p>
+<p>Assim, pela esperança temos que no limite, <span class="math display">\[
+E(X) = 0.P(X=0) + 1.P(X=1) = 1.\frac{1}{2} = \frac{1}{2}
+\]</span></p>
+<p>Utilizando o código em R com essa lógica geramos o gráfico a seguir, e veja que interessante, o gráfico mostrando a plotagem dos valores se aproximando de <span class="math inline">\(\frac{1}{2}\)</span>, conforme o número de lançamentos aumenta.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="Monte_Carlo_Pt2_files/figure-html/unnamed-chunk-1-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="Monte_Carlo_Pt2_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Agora, vejamos como isso ocorre em um dado, utilizando os conceitos de esperança. É legal, utilizarmos um dado por que ele se distancia da distribuição de Bernoulli, no qual se aplicar para valores binários, como um dado tem 6 faces, temos 6 possíveis ocorrências de mesma probabilidade cada, saímos das Distribuições de Bernoulli e entramos em Distribuições Uniformes.</p>
+<p>Suponha que outro dia de tédio tenha chegado, mas desta vez, curiosamente você ao invés de lançar uma moeda, você está agora lançando dados e outra vez você anota o número da face que caiu para cima. É intrigante pensar, o que teremos como a média de todas as jogadas no final do dia (Esperança)?</p>
+</section>
+<section id="resolução-matemática" class="level2">
+<h2 class="anchored" data-anchor-id="resolução-matemática">Resolução matemática</h2>
+<p>Temos que, <span class="math display">\[
+X_i \in [1,2,..,6]
+\]</span></p>
+<p>e que a probabilidade de cair alguma dessas faces em um dado não viciado,</p>
+<p><span class="math display">\[
+P(X_1 = 1)= \frac{1}{6} \\
+P(X_2 = 2)= \frac{1}{6} \\
+...\\
+P(X_6 = 6)= \frac{1}{6} \\
+\]</span> Portanto, na esperança,</p>
+<p><span class="math display">\[
+E[X] = \frac{1*P(X_1=1)+2*P(X_2=2)+...+6*P(X_6=6)}{6}\\
+E[X] = \frac{\frac{1}{6} +\frac{2}{6} +...+ \frac{6}{6} + }{6}\\
+\]</span> ## Utilizando o código em R</p>
+<p>Veja, como fica a aproximação,</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="Monte_Carlo_Pt2_files/figure-html/unnamed-chunk-2-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="Monte_Carlo_Pt2_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="expansão-uma-vida-inteira-de-lançamentos." class="level2">
+<h2 class="anchored" data-anchor-id="expansão-uma-vida-inteira-de-lançamentos.">Expansão: Uma vida inteira de lançamentos.</h2>
+<p>Imagine agora, que ao invés de um dia entendiante, uma determinada pessoa faça isso por toda a sua vida, e no final de cada dia, depois de fazer todos os lançamentos do dia pega cada média final de cada dia e a escreve em um caderno, como seriam dadas as distribuição das médias de cada dia?</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="Monte_Carlo_Pt2_files/figure-html/unnamed-chunk-3-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="Monte_Carlo_Pt2_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Veja que interessante,</p>
+<p>No final de sua vida, a chance da média diaria de lancamentos ter sido de 3.5 é maior do por exemplo 3.56 ou 3.46, ou seja, em um vida inteira, a chance maior é de que a média dos lançamentos diários fiquem por volta de 3.49~3.51, e quase nunca em sua vida um lançamento diário ficou por volta de 3.56 ou 3.46.</p>
+</section>
+<section id="referências" class="level2">
+<h2 class="anchored" data-anchor-id="referências">Referências:</h2>
+<ul>
+<li>Código e explicação usados em aula do professor Pedro Franklin da UFU</li>
+</ul>
 
 
+</section>
+</section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> De volta ao topo</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -407,12 +549,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "Copiada");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "Copiada");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
@@ -762,6 +904,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../portfolio/MonteCarlo/Monte_Carlo_Pt1.html" class="pagination-link" aria-label="O que é ?">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">O que é ?</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -783,6 +934,31 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","closeEffect":"zoom","loop":false,"descPosition":"bottom"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
 
 
 

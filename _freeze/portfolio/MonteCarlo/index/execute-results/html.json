@@ -1,0 +1,15 @@
+{
+  "hash": "27f1b0c2c7ecd98d6d9328142b5ca5f0",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Monte Carlo\"\nauthor: 'Paulo Oyama'\ndate: '06/24/2024'\n#image: LeagueoflegendsIcon.png\n#image-shape: round\n#categories: [\"R\",\"Analise exploratória\",\"Shiny\",\"Dashboard\"]\n#description: \"Utilizando dados relacionados aos campeonatos mundiais de League of Legends (LOL) para criar Dashboards interativos no ambiente Shiny.\"\n#date: \"01/23/2024\" \nbread-crumbs: false\n---\n\n\n\n## Explicação do projeto\n\nO objetivo deste projeto é criar um dashboard interativo e informativo dedicado aos campeonatos mundiais de League of Legends. A ferramenta será desenvolvida utilizando a linguagem de programação [R](https://www.r-project.org/other-docs.html) e alguns pacotes para o estruturamento das bases de dados e a construção do dashboard interativo.\n\n[![Um dos dashboards que construi nessa análise](DashPlayers.png)](https://peishino.shinyapps.io/LOLDashBoard/)\n\n## Pacotes\n\n[Tidyverse](https://www.tidyverse.org/packages/), fornece ferramentas para manipulação, visualização e análise de dados de maneira consistente e eficiente.\n\n[Plotly](https://plotly.com/r/), para criação de gráficos interativos e visualizações de dados.\n\n[Shiny](https://shiny.posit.co/r/getstarted/shiny-basics/lesson1/index.html), para a criação de aplicativos web interativos, permitindo a construção de interfaces dinâmicas e reativas para análise de dados.\n\n[ShinyDashboard](https://rstudio.github.io/shinydashboard/get_started.html), extensão do pacote Shiny que simplifica a criação de dashboards interativos.\n\nPara instalar e carregar essas bibliotecas, utilize o código abaixo:\n\n\n::: {.cell}\n\n```{.r .cell-code}\ninstall.packages(c(\"tidyverse\",\"plotly\",\"shiny\",\"shinydashboard\"))\n\nlibrary(tidyverse)\nlibrary(plotly)\nlibrary(shiny)\nlibrary(shinydashboard)\n```\n:::\n\n\n## Dados\n\nOs dados referentes aos mundiais de 2011 a 2022 foram obtidos no [Kaggle](https://www.kaggle.com/datasets/pedrocsar/league-of-legends-worlds-20112022-stats).\n\nO conjunto de dados consiste em três arquivos CSV, cada um fornecendo informações específicas:\n\n-   Um arquivo que detalha o desempenho dos jogadores em cada partida, incluindo estatísticas individuais.\n\n-   Um arquivo que apresenta os personagens utilizados durante os campeonatos, acompanhado de suas estatísticas relevantes.\n\n-   Um arquivo que fornece informações sobre cada partida, incluindo detalhes dos jogadores e os vencedores de cada confronto.",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

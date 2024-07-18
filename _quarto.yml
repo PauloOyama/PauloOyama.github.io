@@ -2,30 +2,33 @@ project:
   type: website
   output-dir: docs
 
+lightbox: true
+code-block-bg: "#EEEEEE"
+highlight-style: github
+code-block-border-left: "#334061"
+sidebar: false
+
 website:
-  title: "Paulo Oyama"
   page-navigation: true
-  bread-crumbs: true
+  title: "Paulo Oyama"
   back-to-top-navigation: true
   page-footer:
     center: 
       - icon: github
         href: https://github.com/PauloOyama
   sidebar:
-    style: "floating"
-    search: true
-    contents:
-      - section: "Portfolio"
-        contents:
-          - projects.qmd
-          - section: "Monte Carlo"
-            contents: 
-              - Monte_Carlo_Pt1.qmd
+    - id: MonteCarlo
+      contents:
+        - portfolio/MonteCarlo/index.qmd          
+        - section: 'Estudo'
+          contents:
+            - href: portfolio/MonteCarlo/Monte_Carlo_Pt1.qmd
+            - href: portfolio/MonteCarlo/Monte_Carlo_Pt2.qmd
 
   navbar:
     tools:
-      #- icon: envelope
-      #  href: papaloyama@gmail.com
+      - icon: envelope
+        href: mailto:papaloyama@gmail.com@gmail.com
       - icon: github
         menu:
           - text: Source Code
@@ -36,14 +39,18 @@ website:
     search: true
     right:
       - text: "Home"
-        file: index.qmd
-      - projects.qmd 
+        href: index.qmd
+      - text: 'Portfolio'
+        href: projects.qmd 
 
 format:
   html:
+    lang: pt
+    code-overflow: scroll
     theme: 
       dark: darkly
       light: lux
+    toc: true
     grid:
       sidebar-width: 150px
       body-width: 1200px
