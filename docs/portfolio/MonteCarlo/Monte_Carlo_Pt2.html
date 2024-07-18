@@ -246,6 +246,7 @@ window.Quarto = {
   <li><a href="#conceito-de-esperança-ex." id="toc-conceito-de-esperança-ex." class="nav-link" data-scroll-target="#conceito-de-esperança-ex.">Conceito de Esperança (E[X]).</a></li>
   <li><a href="#explicação-matemática" id="toc-explicação-matemática" class="nav-link" data-scroll-target="#explicação-matemática">Explicação matemática</a></li>
   <li><a href="#resolução-matemática" id="toc-resolução-matemática" class="nav-link" data-scroll-target="#resolução-matemática">Resolução matemática</a></li>
+  <li><a href="#utilizando-o-código-em-r" id="toc-utilizando-o-código-em-r" class="nav-link" data-scroll-target="#utilizando-o-código-em-r">Utilizando o código em R</a></li>
   <li><a href="#expansão-uma-vida-inteira-de-lançamentos." id="toc-expansão-uma-vida-inteira-de-lançamentos." class="nav-link" data-scroll-target="#expansão-uma-vida-inteira-de-lançamentos.">Expansão: Uma vida inteira de lançamentos.</a></li>
   <li><a href="#referências" id="toc-referências" class="nav-link" data-scroll-target="#referências">Referências:</a></li>
   </ul></li>
@@ -341,11 +342,15 @@ P(X_1 = 1)= \frac{1}{6} \\
 P(X_2 = 2)= \frac{1}{6} \\
 ...\\
 P(X_6 = 6)= \frac{1}{6} \\
-\]</span> Portanto, na esperança,</p>
+\]</span></p>
+<p>Portanto, na esperança,</p>
 <p><span class="math display">\[
 E[X] = \frac{1*P(X_1=1)+2*P(X_2=2)+...+6*P(X_6=6)}{6}\\
 E[X] = \frac{\frac{1}{6} +\frac{2}{6} +...+ \frac{6}{6} + }{6}\\
-\]</span> ## Utilizando o código em R</p>
+\]</span></p>
+</section>
+<section id="utilizando-o-código-em-r" class="level2">
+<h2 class="anchored" data-anchor-id="utilizando-o-código-em-r">Utilizando o código em R</h2>
 <p>Veja, como fica a aproximação,</p>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>res <span class="ot">&lt;-</span> <span class="fu">c</span>()</span>
@@ -397,7 +402,10 @@ E[X] = \frac{\frac{1}{6} +\frac{2}{6} +...+ \frac{6}{6} + }{6}\\
 <section id="referências" class="level2">
 <h2 class="anchored" data-anchor-id="referências">Referências:</h2>
 <ul>
-<li>Código e explicação usados em aula do professor Pedro Franklin da UFU</li>
+<li><p>Código e explicação usados em aula do professor Pedro Franklin da UFU</p></li>
+<li><p><a href="https://www.scielo.br/j/qn/a/sJtBCMjy58FLgy74kqRyBmB/?lang=pt">Artigo2008_MMC</a></p></li>
+<li><p><a href="https://www.est.ufmg.br/portal/wp-content/uploads/2023/01/RTE_01_2019.pdf">Introdução aos Métodos de Monte Carlo Avançados-Adrian Hinojosa Luna</a></p></li>
+<li><p><a href="http://repositorio.ufrr.br:8080/jspui/bitstream/prefix/388/1/M%C3%A9todo%20Monte%20Carlo%20e%20suas%20aplica%C3%A7%C3%B5es...%20Carvalho.pdf">MÉTODO MONTE CARLO E SUAS APLICAÇÕES-ADMILSON RODRIGUES DE CARVALHO</a></p></li>
 </ul>
 
 

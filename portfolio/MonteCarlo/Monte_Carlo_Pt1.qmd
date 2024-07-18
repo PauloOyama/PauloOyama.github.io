@@ -77,13 +77,3 @@ points(x[ circulo ], y[ circulo ], col = " orange ", pch = 20, cex = 0.5)
 # Pontos que cairam fora em azul 
 points(x[! circulo ], y[! circulo ], col = " blue ", pch = 20, cex = 0.5)
 ```
-
-## Referências
-
--   Código e explicação usados em aula do professor Pedro Franklin da UFU
-
--   [Artigo2008_MMC](https://www.scielo.br/j/qn/a/sJtBCMjy58FLgy74kqRyBmB/?lang=pt)
-
--   [Introdução aos Métodos de Monte Carlo Avançados-Adrian Hinojosa Luna](https://www.est.ufmg.br/portal/wp-content/uploads/2023/01/RTE_01_2019.pdf)
-
--   [MÉTODO MONTE CARLO E SUAS APLICAÇÕES-ADMILSON RODRIGUES DE CARVALHO](http://repositorio.ufrr.br:8080/jspui/bitstream/prefix/388/1/M%C3%A9todo%20Monte%20Carlo%20e%20suas%20aplica%C3%A7%C3%B5es...%20Carvalho.pdf)

@@ -4,6 +4,7 @@ bread-crumbs: false
 highlight-style: arrow
 ---
 
+
 # Uma breve introdução ao Método de Monte Carlo #2
 
 Agora, que conseguimos entender um pouco do porque ter sido criado e ter visto uma das implementações deste método, veremos também no que se baseia o este método.
@@ -42,6 +43,7 @@ $$
 
 Utilizando o código em R com essa lógica geramos o gráfico a seguir, e veja que interessante, o gráfico mostrando a plotagem dos valores se aproximando de $\frac{1}{2}$, conforme o número de lançamentos aumenta.
 
+
 ```{r}
 #| fig-keep: last
 #| fig-align: center
@@ -60,6 +62,7 @@ xlab = "numero de lancamentos ",
 ylab = " proporcao de caras ")
 abline (h = c(0.5) , col = "red")
 ```
+
 
 Agora, vejamos como isso ocorre em um dado, utilizando os conceitos de esperança. É legal, utilizarmos um dado por que ele se distancia da distribuição de Bernoulli, no qual se aplicar para valores binários, como um dado tem 6 faces, temos 6 possíveis ocorrências de mesma probabilidade cada, saímos das Distribuições de Bernoulli e entramos em Distribuições Uniformes.
 
@@ -90,6 +93,7 @@ $$
 ## Utilizando o código em R
 Veja, como fica a aproximação,
 
+
 ```{r}
 #| fig-keep: last
 #| fig-align: center
@@ -105,9 +109,11 @@ plot (x = 1:10000 , y = proporcao ,type = "l", ylab = "Media", xlab = "Numero de
 abline (h = c(3.5) , col = "red")
 ```
 
+
 ## Expansão: Uma vida inteira de lançamentos.
 
 Imagine agora, que ao invés de um dia entendiante, uma determinada pessoa faça isso por toda a sua vida, e no final de cada dia, depois de fazer todos os lançamentos do dia pega cada média final de cada dia e a escreve em um caderno, como seriam dadas as distribuição das médias de cada dia?
+
 
 ```{r}
 #| fig-keep: last
@@ -129,6 +135,7 @@ hist(dist)
 
 
 
+
 No final de sua vida, a chance da média diaria de lancamentos ter sido de 3.5 é maior do por exemplo 3.56 ou 3.46, ou seja, em um vida inteira, a chance maior é de que a média dos lançamentos diários fiquem por volta de 3.49\~3.51, e quase nunca em sua vida um lançamento diário ficou por volta de 3.56 ou 3.46.
 
 ## Referências:
@@ -140,4 +147,5 @@ No final de sua vida, a chance da média diaria de lancamentos ter sido de 3.5 �
 -   [Introdução aos Métodos de Monte Carlo Avançados-Adrian Hinojosa Luna](https://www.est.ufmg.br/portal/wp-content/uploads/2023/01/RTE_01_2019.pdf)
 
 -   [MÉTODO MONTE CARLO E SUAS APLICAÇÕES-ADMILSON RODRIGUES DE CARVALHO](http://repositorio.ufrr.br:8080/jspui/bitstream/prefix/388/1/M%C3%A9todo%20Monte%20Carlo%20e%20suas%20aplica%C3%A7%C3%B5es...%20Carvalho.pdf)
+
 
