@@ -1,0 +1,3 @@
+sidebar: MonteCarlo
+execute:
+  freeze: true

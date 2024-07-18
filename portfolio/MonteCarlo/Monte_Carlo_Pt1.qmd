@@ -1,16 +1,11 @@
 ---
-title: "Monte Carlo"
-author: 'Paulo Oyama'
-date: '06/24/2024'
-listing: true
-sidebar: false
+title: "O que é ?"
+bread-crumbs: false
 ---
 
 # Uma breve introdução ao Método de Monte Carlo (M.C)
 
-
 O post em si é uma forma de explicação de uma maneira breve porém concisa, sobre o que é o método de Monte Carlo e possivelmente um futuro post no qual haverá um estudo sobre as diferenças desta ferramenta em detrimento dos métodos numéricos convencionais.
-
 
 ## Qual a finalidade do método de Monte Carlo?
 
@@ -48,7 +43,7 @@ $$
 
 Primeiramente, geraremos dois conjuntos com 100.000 pontos aleatórios cada com nosso computador, esses dois conjuntos tem intervalos fechados que que vão de \[-1,1\] (o tamanho do intervalo é arbitrário, porém um intervalo menor precisará de menos pontos para conseguir uma estimativa de π boa) e atribuiremos ao primeiro conjunto uma variável x e ao segundo á uma variável y, que serão o par ordenado (x,y).
 
-![Elephant](./portfolio){width="300"}
+![Circle](Imgs/monte_carlo_pt1_circle.png)
 
 ```{R}
 #Gera um vetor de tamanho #100000 com todos os #campos preenchidos #com um valor entre -1 e 1 
@@ -71,6 +66,8 @@ p <- sum( circulo )/ 100000
 Como temos, a P(A) na variavel p, e temos também a Área do quadrado Q, conseguimos o valor de Pi, como justificado matematicamente acima.
 
 ```{R}
+#| fig-keep: last
+#| fig-align: center
 piresultado <- 4*p 
 # piresultado = 3.13988 
 plot(x, y, type = "n") 
@@ -86,6 +83,6 @@ points(x[! circulo ], y[! circulo ], col = " blue ", pch = 20, cex = 0.5)
 
 -   [Artigo2008_MMC](https://www.scielo.br/j/qn/a/sJtBCMjy58FLgy74kqRyBmB/?lang=pt)
 
--   [Introdução aos Métodos de Monte Carlo Avançados-Adrian Hinojosa Luna](<https://www.est.ufmg.br/portal/wp-content/uploads/2023/01/RTE_01_2019.pdf>)
+-   [Introdução aos Métodos de Monte Carlo Avançados-Adrian Hinojosa Luna](https://www.est.ufmg.br/portal/wp-content/uploads/2023/01/RTE_01_2019.pdf)
 
 -   [MÉTODO MONTE CARLO E SUAS APLICAÇÕES-ADMILSON RODRIGUES DE CARVALHO](http://repositorio.ufrr.br:8080/jspui/bitstream/prefix/388/1/M%C3%A9todo%20Monte%20Carlo%20e%20suas%20aplica%C3%A7%C3%B5es...%20Carvalho.pdf)
