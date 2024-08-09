@@ -9,9 +9,7 @@ listing:
   sort: "date"
 ---
 
-Olá! Gosto de desafios computacionais e tenho dedicado minha carreira ao desenvolvimento de soluções inovadoras em ciência de dados e engenharia de software.
-
-Abaixo, destaco alguns dos projetos que realizei, que demonstram minha capacidade de aplicar conhecimentos teóricos em cenários práticos e complexos, incluindo projetos pessoais desenvolvidos durante a faculdade e no meu dia a dia. 
+Explore o meu portfólio e veja como a teoria da ciência da computação se transforma em soluções inovadoras e práticas. Com uma combinação de expertise acadêmica e projetos avançados, tento oferecer insights valiosos e exemplos impressionantes de como resolver desafios complexos. Ideal para quem busca inspiração e inovação na área da computação.
 
 
 ::: {#projetos}
