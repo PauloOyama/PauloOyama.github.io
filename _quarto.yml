@@ -22,6 +22,18 @@ website:
           contents:
             - href: portfolio/MonteCarlo/Monte_Carlo_Pt1.qmd
             - href: portfolio/MonteCarlo/Monte_Carlo_Pt2.qmd
+    - id: PreCommit
+      contents:
+        - text: "Início"
+          href: portfolio/PreCommit/index.qmd    
+        - section: 'PreCommit'
+          contents:
+            - text: "Style Guide"
+              href: portfolio/PreCommit/StandardTools.qmd
+            - text: "Pre-Commit"
+              href: portfolio/PreCommit/PreCommit.qmd
+
+
 
   navbar:
     tools:

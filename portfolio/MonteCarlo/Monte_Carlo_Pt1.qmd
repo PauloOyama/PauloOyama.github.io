@@ -31,7 +31,7 @@ $$
 Ou seja, o conjunto A é formado pelos pontos do quadrado Q que estão dentro da círculo C ($x² + y² ≤ 1$). Dessa forma, P(A) representa a probabilidade de sortear um número que esteja dentro do círculo.Logo,
 
 $$
-  P(A) = \frac{Área \space de \space C}{Área \space de \space Q} = \frac{\pi \times 1^2}{2^2} = \frac{\pi}{4}
+  P(A) = \frac{Área \space do \space Circulo}{Área \space do \space Quadrado} = \frac{\pi \times 1^2}{2^2} = \frac{\pi}{4}
 $$
 
 e, por consequência,

@@ -1,0 +1,7 @@
+---
+title: "Pre Commit For Work Group"
+date: '08/09/2024'
+categories: ["Git","Pre Commit","Python"]
+---
+
+EAE

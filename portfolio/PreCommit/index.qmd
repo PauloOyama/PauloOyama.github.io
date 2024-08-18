@@ -1,0 +1,19 @@
+---
+title: "Pre Commit Para Grupos de Trabalho"
+date: '08/09/2024'
+image: git-hooks.png
+categories: ["Git","Pre Commit","Python"]
+description: "Uma breve descrição de como usar linters com git hook de maneira automática em projetos com versionamento."
+---
+
+## O mundo real
+
+No campo da programação, os desenvolvedores operam em um ambiente que pode ser caracterizado por uma ampla variedade de abordagens. Alguns profissionais preferem trabalhar de forma independente, o que lhes permite acelerar o desenvolvimento e manter um controle total sobre o processo. Outros, no entanto, optam pela colaboração em equipe, reconhecendo que o trabalho conjunto pode oferecer benefícios significativos, como a diversidade de ideias e o compartilhamento de responsabilidades.
+
+
+O avanço tecnológico trouxe novas soluções para o compartilhamento de código. No passado, a prática envolvia métodos físicos, como o uso de cartões perfurados e a troca de pilhas de papéis. A introdução dos disquetes representou um progresso ao permitir uma melhor organização e mobilidade dos dados. A inovação mais significativa ocorreu com o advento da internet, que possibilitou o surgimento de repositórios online, como [Tortoise SVN](https://tortoisesvn.net/downloads.html). Esses sistemas permitiram que o código fosse armazenado e acessado em _data centers_, facilitando a colaboração entre desenvolvedores distantes.
+
+Apesar desses avanços, um novo desafio surgiu: garantir a qualidade e a padronização do código. A transição de métodos físicos para digitais não eliminou a necessidade de manter padrões elevados no desenvolvimento de software. A qualidade do código continua a ser uma preocupação central, exigindo métodos eficazes para assegurar que o código seja não apenas funcional, mas também bem estruturado e uniforme.
+
+
+Para enfrentar os desafios associados à qualidade e à padronização do código, surgiram diversas ferramentas e metodologias. Essas ferramentas são projetadas para ajudar os desenvolvedores a implementar e manter padrões de codificação consistentes, além de promover boas práticas de desenvolvimento. A utilização dessas ferramentas é crucial para assegurar que o código produzido seja de alta qualidade e que a colaboração entre equipes seja eficiente e produtiva

@@ -31,5 +31,17 @@
   },
   "portfolio/MonteCarlo/Monte_Carlo_Pt2.qmd": {
     "Monte_Carlo_Pt2.html": "72222be5"
+  },
+  "portfolio/PreCommit/index.qmd": {
+    "index.html": "fb7e2d7e"
+  },
+  "portfolio/PreCommit/PreCommit.qmd": {
+    "PreCommit.html": "6274583b"
+  },
+  "docs/portfolio/PreCommit/PreCommit.qmd": {
+    "PreCommit.html": "864c3c5a"
+  },
+  "portfolio/PreCommit/StandardTools.qmd": {
+    "StandardTools.html": "f2394318"
   }
 }

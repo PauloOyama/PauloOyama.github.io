@@ -2,7 +2,8 @@
   {
     "listing": "/projects.html",
     "items": [
-      "/portfolio/MonteCarlo/index.html"
+      "/portfolio/MonteCarlo/index.html",
+      "/portfolio/PreCommit/index.html"
     ]
   }
 ]
