@@ -1,0 +1,144 @@
+baseURL: "https://paulooyama.github.io/"
+title: "Paulo Oyama"
+theme: "PaperMod"
+defaultContentLanguage: "pt"
+defaultContentLanguageInSubdir: false
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+languages:
+  pt:
+    label: "Português"
+    weight: 1
+    params:
+      profileMode:
+        enabled: true
+        title: "Paulo Oyama"
+        subtitle: "Cientista de Dados | Pesquisador de IA | UFU"
+        imageUrl: "photo.jpeg"
+        imageWidth: 140
+        imageHeight: 140
+        imageTitle: "Paulo Oyama"
+        buttons:
+          - name: Portfolio
+            url: /portfolio
+          - name: Sobre
+            url: /about
+    menu:
+      main:
+        - name: Home
+          url: /
+          weight: 1
+        - name: Portfolio
+          url: /portfolio/
+          weight: 2
+        - name: Sobre
+          url: /about/
+          weight: 3
+  en:
+    label: "English"
+    weight: 2
+    params:
+      profileMode:
+        enabled: true
+        title: "Paulo Oyama"
+        subtitle: "Data Scientist | AI Researcher | UFU"
+        imageUrl: "photo.jpeg"
+        imageWidth: 140
+        imageHeight: 140
+        imageTitle: "Paulo Oyama"
+        buttons:
+          - name: Portfolio
+            url: /en/portfolio
+          - name: About
+            url: /en/about
+    menu:
+      main:
+        - name: Home
+          url: /en/
+          weight: 1
+        - name: Portfolio
+          url: /en/portfolio/
+          weight: 2
+        - name: About
+          url: /en/about/
+          weight: 3
+
+params:
+  env: production
+  title: Paulo Oyama
+  description: "Data Scientist & AI Researcher"
+  author: Paulo Oyama
+  defaultTheme: auto
+  disableThemeToggle: false
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+  math: true
+
+  assets:
+    favicon: ""
+    favicon16x16: ""
+    favicon32x32: ""
+    apple_touch_icon: ""
+    safari_pinned_tab: ""
+
+  socialIcons:
+    - name: linkedin
+      url: "https://www.linkedin.com/in/paulo-oyama-27b470212/"
+    - name: github
+      url: "https://github.com/PauloOyama"
+    - name: email
+      url: "mailto:papaloyama@gmail.com"
+
+  editPost:
+    URL: "https://github.com/PauloOyama/PauloOyama.github.io/blob/main/content"
+    Text: "Sugerir mudanças"
+    appendFilePath: true
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+markup:
+  goldmark:
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block:
+            - ["$$", "$$"]
+            - ["\\[", "\\]"]
+          inline:
+            - ["$", "$"]
+            - ["\\(", "\\)"]
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON

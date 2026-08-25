@@ -1,0 +1,14 @@
+prev: Anterior
+next: Próximo
+read_time:
+  one: "{{ .ReadingTime }} min de leitura"
+  other: "{{ .ReadingTime }} min de leitura"
+toc: Índice
+translations: Traduções
+home: Início
+tags: Tags
+categories: Categorias
+search_placeholder: Buscar...
+search_result_heading: Resultados para
+search_no_results: Nenhum resultado encontrado para
+edit_post: Sugerir mudanças
