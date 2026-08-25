@@ -1,0 +1,22 @@
+  /* Custom styles - Paulo Oyama Blog */
+  
+  /* Font: Tahoma (matching original Quarto theme) */
+  body {
+      font-family: "Tahoma", "Geneva", sans-serif;
+  }
+  
+  /* Code block border left - matching original #334061 */
+  .highlight {
+      border-left: 3px solid #334061;
+      padding-left: 0.5rem;
+  }
+  
+  /* Profile image round */
+  .profile-mode .profile img {
+      border-radius: 50%;
+  }
+  
+  /* Portfolio cover images */
+  .post-entry .entry-cover img {
+      border-radius: 8px;
+  }
