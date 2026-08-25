@@ -131,11 +131,14 @@ markup:
         enable: true
         delimiters:
           block:
-            - ["$$", "$$"]
-            - ["\\[", "\\]"]
+          - - '\['
+            - '\]'
+          - - $$
+            - $$
           inline:
-            - ["$", "$"]
-            - ["\\(", "\\)"]
+          - - '\('
+            - '\)'
+          enable: true
 
 outputs:
   home:
