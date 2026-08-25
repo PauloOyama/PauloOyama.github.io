@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://paulooyama.github.io/sitemap.xml

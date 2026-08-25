@@ -1,0 +1,14 @@
+prev: Previous
+next: Next
+read_time:
+  one: "{{ .ReadingTime }} min read"
+  other: "{{ .ReadingTime }} min read"
+toc: Table of Contents
+translations: Translations
+home: Home
+tags: Tags
+categories: Categories
+search_placeholder: Search...
+search_result_heading: Results for
+search_no_results: No results found for
+edit_post: Suggest changes
