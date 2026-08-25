@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Probabilidade on Paulo Oyama</title>
-    <link>https://paulooyama.github.io/tags/probabilidade/</link>
+    <link>http://localhost:1313/tags/probabilidade/</link>
     <description>Recent content in Probabilidade on Paulo Oyama</description>
     <generator>Hugo</generator>
     <language>pt</language>
     <lastBuildDate>Mon, 24 Jun 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://paulooyama.github.io/tags/probabilidade/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/probabilidade/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Monte Carlo</title>
-      <link>https://paulooyama.github.io/portfolio/monte-carlo/</link>
+      <link>http://localhost:1313/portfolio/monte-carlo/</link>
       <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://paulooyama.github.io/portfolio/monte-carlo/</guid>
+      <guid>http://localhost:1313/portfolio/monte-carlo/</guid>
       <description>Uma breve discussão sobre o Método de Monte Carlo — o que é, como funciona e como implementá-lo em R.</description>
     </item>
   </channel>

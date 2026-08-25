@@ -2,122 +2,122 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Paulo Oyama</title>
-    <link>https://paulooyama.github.io/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Paulo Oyama</description>
     <generator>Hugo</generator>
     <language>pt</language>
     <lastBuildDate>Fri, 09 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://paulooyama.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git</title>
-      <link>https://paulooyama.github.io/tags/git/</link>
+      <link>http://localhost:1313/tags/git/</link>
       <pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://paulooyama.github.io/tags/git/</guid>
+      <guid>http://localhost:1313/tags/git/</guid>
       <description></description>
     </item>
     <item>
       <title>Linter</title>
-      <link>https://paulooyama.github.io/tags/linter/</link>
+      <link>http://localhost:1313/tags/linter/</link>
       <pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://paulooyama.github.io/tags/linter/</guid>
+      <guid>http://localhost:1313/tags/linter/</guid>
       <description></description>
     </item>
     <item>
       <title>Pre-Commit</title>
-      <link>https://paulooyama.github.io/tags/pre-commit/</link>
+      <link>http://localhost:1313/tags/pre-commit/</link>
       <pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://paulooyama.github.io/tags/pre-commit/</guid>
+      <guid>http://localhost:1313/tags/pre-commit/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>https://paulooyama.github.io/tags/python/</link>
+      <link>http://localhost:1313/tags/python/</link>
       <pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://paulooyama.github.io/tags/python/</guid>
+      <guid>http://localhost:1313/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>Qualidade De Código</title>
-      <link>https://paulooyama.github.io/tags/qualidade-de-c%C3%B3digo/</link>
+      <link>http://localhost:1313/tags/qualidade-de-c%C3%B3digo/</link>
       <pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://paulooyama.github.io/tags/qualidade-de-c%C3%B3digo/</guid>
+      <guid>http://localhost:1313/tags/qualidade-de-c%C3%B3digo/</guid>
       <description></description>
     </item>
     <item>
       <title>Estatística</title>
-      <link>https://paulooyama.github.io/tags/estat%C3%ADstica/</link>
+      <link>http://localhost:1313/tags/estat%C3%ADstica/</link>
       <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://paulooyama.github.io/tags/estat%C3%ADstica/</guid>
+      <guid>http://localhost:1313/tags/estat%C3%ADstica/</guid>
       <description></description>
     </item>
     <item>
       <title>Monte Carlo</title>
-      <link>https://paulooyama.github.io/tags/monte-carlo/</link>
+      <link>http://localhost:1313/tags/monte-carlo/</link>
       <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://paulooyama.github.io/tags/monte-carlo/</guid>
+      <guid>http://localhost:1313/tags/monte-carlo/</guid>
       <description></description>
     </item>
     <item>
       <title>Probabilidade</title>
-      <link>https://paulooyama.github.io/tags/probabilidade/</link>
+      <link>http://localhost:1313/tags/probabilidade/</link>
       <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://paulooyama.github.io/tags/probabilidade/</guid>
+      <guid>http://localhost:1313/tags/probabilidade/</guid>
       <description></description>
     </item>
     <item>
       <title>R</title>
-      <link>https://paulooyama.github.io/tags/r/</link>
+      <link>http://localhost:1313/tags/r/</link>
       <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://paulooyama.github.io/tags/r/</guid>
+      <guid>http://localhost:1313/tags/r/</guid>
       <description></description>
     </item>
     <item>
       <title>Automação</title>
-      <link>https://paulooyama.github.io/tags/automa%C3%A7%C3%A3o/</link>
+      <link>http://localhost:1313/tags/automa%C3%A7%C3%A3o/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://paulooyama.github.io/tags/automa%C3%A7%C3%A3o/</guid>
+      <guid>http://localhost:1313/tags/automa%C3%A7%C3%A3o/</guid>
       <description></description>
     </item>
     <item>
       <title>Black</title>
-      <link>https://paulooyama.github.io/tags/black/</link>
+      <link>http://localhost:1313/tags/black/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://paulooyama.github.io/tags/black/</guid>
+      <guid>http://localhost:1313/tags/black/</guid>
       <description></description>
     </item>
     <item>
       <title>CI</title>
-      <link>https://paulooyama.github.io/tags/ci/</link>
+      <link>http://localhost:1313/tags/ci/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://paulooyama.github.io/tags/ci/</guid>
+      <guid>http://localhost:1313/tags/ci/</guid>
       <description></description>
     </item>
     <item>
       <title>Flake8</title>
-      <link>https://paulooyama.github.io/tags/flake8/</link>
+      <link>http://localhost:1313/tags/flake8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://paulooyama.github.io/tags/flake8/</guid>
+      <guid>http://localhost:1313/tags/flake8/</guid>
       <description></description>
     </item>
     <item>
       <title>Lei Dos Grandes Números</title>
-      <link>https://paulooyama.github.io/tags/lei-dos-grandes-n%C3%BAmeros/</link>
+      <link>http://localhost:1313/tags/lei-dos-grandes-n%C3%BAmeros/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://paulooyama.github.io/tags/lei-dos-grandes-n%C3%BAmeros/</guid>
+      <guid>http://localhost:1313/tags/lei-dos-grandes-n%C3%BAmeros/</guid>
       <description></description>
     </item>
     <item>
       <title>PEP8</title>
-      <link>https://paulooyama.github.io/tags/pep8/</link>
+      <link>http://localhost:1313/tags/pep8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://paulooyama.github.io/tags/pep8/</guid>
+      <guid>http://localhost:1313/tags/pep8/</guid>
       <description></description>
     </item>
     <item>
       <title>Pi</title>
-      <link>https://paulooyama.github.io/tags/pi/</link>
+      <link>http://localhost:1313/tags/pi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://paulooyama.github.io/tags/pi/</guid>
+      <guid>http://localhost:1313/tags/pi/</guid>
       <description></description>
     </item>
   </channel>

@@ -8,9 +8,8 @@ math: true
 ShowToc: true
 ShowBreadCrumbs: true
 cover:
-  image: "MonteCarlo.webp"
+  image: "/portfolio/monte-carlo/MonteCarlo.webp"
   alt: "Monte Carlo"
-  relative: true
 ---
 
 # Uma breve introdução ao Método de Monte Carlo (M.C)
@@ -85,7 +84,7 @@ points(x[!circulo], y[!circulo], col = "blue",   pch = 20, cex = 0.5)
 
 O resultado visual é a distribuição dos pontos dentro (laranja) e fora (azul) do círculo:
 
-![Estimativa de Pi via Monte Carlo — pontos dentro do círculo em laranja, fora em azul](imgs/circle-estimation.png)
+![Estimativa de Pi via Monte Carlo — pontos dentro do círculo em laranja, fora em azul](/portfolio/monte-carlo/imgs/circle-estimation.png)
 
 > **Resultado:** Com 100.000 pontos, a estimativa de π fica em torno de **3,1399 ~ 3,1416**, demonstrando como a simulação aleatória converge para o valor real com um número grande de experimentos.
 

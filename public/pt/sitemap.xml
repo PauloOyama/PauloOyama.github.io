@@ -2,107 +2,107 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://paulooyama.github.io/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2024-08-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="https://paulooyama.github.io/categories/"
+                href="http://localhost:1313/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://paulooyama.github.io/en/categories/"
+                href="http://localhost:1313/en/categories/"
                 />
   </url><url>
-    <loc>https://paulooyama.github.io/tags/git/</loc>
+    <loc>http://localhost:1313/tags/git/</loc>
     <lastmod>2024-08-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://paulooyama.github.io/tags/linter/</loc>
+    <loc>http://localhost:1313/tags/linter/</loc>
     <lastmod>2024-08-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://paulooyama.github.io/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2024-08-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="https://paulooyama.github.io/"
+                href="http://localhost:1313/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://paulooyama.github.io/en/"
+                href="http://localhost:1313/en/"
                 />
   </url><url>
-    <loc>https://paulooyama.github.io/categories/portfolio/</loc>
+    <loc>http://localhost:1313/categories/portfolio/</loc>
     <lastmod>2024-08-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://paulooyama.github.io/portfolio/</loc>
+    <loc>http://localhost:1313/portfolio/</loc>
     <lastmod>2024-08-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://paulooyama.github.io/tags/pre-commit/</loc>
+    <loc>http://localhost:1313/tags/pre-commit/</loc>
     <lastmod>2024-08-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://paulooyama.github.io/portfolio/pre-commit/</loc>
+    <loc>http://localhost:1313/portfolio/pre-commit/</loc>
     <lastmod>2024-08-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://paulooyama.github.io/tags/python/</loc>
+    <loc>http://localhost:1313/tags/python/</loc>
     <lastmod>2024-08-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://paulooyama.github.io/tags/qualidade-de-c%C3%B3digo/</loc>
+    <loc>http://localhost:1313/tags/qualidade-de-c%C3%B3digo/</loc>
     <lastmod>2024-08-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://paulooyama.github.io/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-08-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="https://paulooyama.github.io/tags/"
+                href="http://localhost:1313/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://paulooyama.github.io/en/tags/"
+                href="http://localhost:1313/en/tags/"
                 />
   </url><url>
-    <loc>https://paulooyama.github.io/en/about/</loc>
+    <loc>http://localhost:1313/en/about/</loc>
     <lastmod>2024-06-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://paulooyama.github.io/tags/estat%C3%ADstica/</loc>
+    <loc>http://localhost:1313/tags/estat%C3%ADstica/</loc>
     <lastmod>2024-06-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://paulooyama.github.io/portfolio/monte-carlo/</loc>
+    <loc>http://localhost:1313/portfolio/monte-carlo/</loc>
     <lastmod>2024-06-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://paulooyama.github.io/tags/monte-carlo/</loc>
+    <loc>http://localhost:1313/tags/monte-carlo/</loc>
     <lastmod>2024-06-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://paulooyama.github.io/en/</loc>
+    <loc>http://localhost:1313/en/</loc>
     <lastmod>2024-06-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://paulooyama.github.io/tags/probabilidade/</loc>
+    <loc>http://localhost:1313/tags/probabilidade/</loc>
     <lastmod>2024-06-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://paulooyama.github.io/tags/r/</loc>
+    <loc>http://localhost:1313/tags/r/</loc>
     <lastmod>2024-06-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://paulooyama.github.io/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2024-06-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://paulooyama.github.io/tags/automa%C3%A7%C3%A3o/</loc>
+    <loc>http://localhost:1313/tags/automa%C3%A7%C3%A3o/</loc>
   </url><url>
-    <loc>https://paulooyama.github.io/tags/black/</loc>
+    <loc>http://localhost:1313/tags/black/</loc>
   </url><url>
-    <loc>https://paulooyama.github.io/tags/ci/</loc>
+    <loc>http://localhost:1313/tags/ci/</loc>
   </url><url>
-    <loc>https://paulooyama.github.io/tags/flake8/</loc>
+    <loc>http://localhost:1313/tags/flake8/</loc>
   </url><url>
-    <loc>https://paulooyama.github.io/tags/lei-dos-grandes-n%C3%BAmeros/</loc>
+    <loc>http://localhost:1313/tags/lei-dos-grandes-n%C3%BAmeros/</loc>
   </url><url>
-    <loc>https://paulooyama.github.io/tags/pep8/</loc>
+    <loc>http://localhost:1313/tags/pep8/</loc>
   </url><url>
-    <loc>https://paulooyama.github.io/tags/pi/</loc>
+    <loc>http://localhost:1313/tags/pi/</loc>
   </url><url>
-    <loc>https://paulooyama.github.io/en/portfolio/</loc>
+    <loc>http://localhost:1313/en/portfolio/</loc>
   </url>
 </urlset>

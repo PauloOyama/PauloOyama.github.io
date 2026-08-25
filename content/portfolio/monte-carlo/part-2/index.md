@@ -8,9 +8,8 @@ math: true
 ShowToc: true
 ShowBreadCrumbs: true
 cover:
-  image: "MonteCarlo.webp"
+  image: "/portfolio/monte-carlo/MonteCarlo.webp"
   alt: "Monte Carlo"
-  relative: true
 ---
 
 # Uma breve introdução ao Método de Monte Carlo — Parte 2
@@ -69,7 +68,7 @@ plot(x = 1:5000, y = proporcao, type = "l",
 abline(h = 0.5, col = "red")
 ```
 
-![Convergência da proporção de caras para 0.5 conforme o número de lançamentos aumenta](imgs/coin-flip-convergence.png)
+![Convergência da proporção de caras para 0.5 conforme o número de lançamentos aumenta](/portfolio/monte-carlo/imgs/coin-flip-convergence.png)
 
 ---
 
@@ -105,7 +104,7 @@ plot(x = 1:10000, y = proporcao, type = "l",
 abline(h = 3.5, col = "red")
 ```
 
-![Convergência da média do dado para E[X] = 3.5 conforme o número de lançamentos aumenta](imgs/dice-convergence.png)
+![Convergência da média do dado para E[X] = 3.5 conforme o número de lançamentos aumenta](/portfolio/monte-carlo/imgs/dice-convergence.png)
 
 ---
 
@@ -130,7 +129,7 @@ for (j in 1:1000) {
 hist(dist)
 ```
 
-![Distribuição das médias diárias ao longo de 1000 dias — a distribuição converge para uma normal centrada em 3.5](imgs/lifetime-histogram.png)
+![Distribuição das médias diárias ao longo de 1000 dias — a distribuição converge para uma normal centrada em 3.5](/portfolio/monte-carlo/imgs/lifetime-histogram.png)
 
 No final de uma vida inteira, a **chance da média diária ter sido 3.5 é a maior de todas**. Raramente em sua vida um lançamento diário ficou em torno de 3.56 ou 3.44 — a distribuição das médias converge para uma **normal centrada em 3.5**, conforme previsto pelo Teorema Central do Limite.
 

@@ -7,9 +7,8 @@ summary: "Como configurar o pre-commit para rodar Black e Flake8 automaticamente
 ShowToc: true
 ShowBreadCrumbs: true
 cover:
-  image: "git-hooks.png"
+  image: "/portfolio/pre-commit/git-hooks.png"
   alt: "Git Hooks — diagrama do fluxo de commits com hooks"
-  relative: true
 ---
 
 > **Nota:** Este post está em construção. O conteúdo será expandido em breve com exemplos completos de configuração do pre-commit.
@@ -20,7 +19,7 @@ O [pre-commit](https://pre-commit.com/) é um framework para gerenciar e manter 
 
 Combinado com as ferramentas da [parte anterior](../standard-tools/) (Black e Flake8), o pre-commit garante que nenhum código fora do padrão entre no repositório.
 
-![Diagrama de git hooks — o hook intercepta o commit antes de ele ser finalizado](git-hooks.png)
+![Diagrama de git hooks — o hook intercepta o commit antes de ele ser finalizado](/portfolio/pre-commit/git-hooks.png)
 
 ## Instalação
 
